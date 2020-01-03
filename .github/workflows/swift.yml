@@ -11,8 +11,6 @@ jobs:
         destination: ["OS=13.1,name=iPhone 11 Pro"]
     steps:
       - uses: actions/checkout@v1
-      - name: Install Dependencies
-        run: ./Scripts/bootstrap.sh
       - name: Test on iOS - ${{ matrix.destination }}
         run: |
           set -o pipefail
