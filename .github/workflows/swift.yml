@@ -11,6 +11,8 @@ jobs:
         destination: ["OS=13.1,name=iPhone 11 Pro"]
     steps:
       - uses: actions/checkout@v1
+      - name: Install Dependencies
+        run: ./Scripts/bootstrap.sh
       - name: Test on iOS - ${{ matrix.destination }}
         run: |
           set -o pipefail
@@ -20,7 +22,7 @@ jobs:
       - name: Upload Code Coverage
         run: bash <(curl -s https://codecov.io/bash) -J '^SwiftWings$' -t ${{ secrets.CODECOV_TOKEN }}
       - name: Build for release on iOS - ${{ matrix.destination }}
-    run: bundle exec rake build_release
+        run: bundle exec rake build_release
   spm:
     name: SPM
     runs-on: macOS-latest
