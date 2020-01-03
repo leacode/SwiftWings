@@ -11,6 +11,8 @@
 		6D3684AA23BF834B00492195 /* NSObject+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3684A923BF834B00492195 /* NSObject+Name.swift */; };
 		6D3684B423BF844000492195 /* SwiftWings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D36849B23BF82A600492195 /* SwiftWings.framework */; };
 		6D3684BC23BF849900492195 /* NSObject+NameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3684BB23BF849900492195 /* NSObject+NameTests.swift */; };
+		6D3684C023BF8C5A00492195 /* String+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3684BF23BF8C5A00492195 /* String+Subscript.swift */; };
+		6D3684C423BF8CA400492195 /* String+SubscriptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3684C323BF8CA400492195 /* String+SubscriptTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +33,8 @@
 		6D3684AF23BF844000492195 /* SwiftWingsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftWingsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D3684B323BF844000492195 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D3684BB23BF849900492195 /* NSObject+NameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+NameTests.swift"; sourceTree = "<group>"; };
+		6D3684BF23BF8C5A00492195 /* String+Subscript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "String+Subscript.swift"; path = "SwiftWingsTests/Extensions/String+Subscript.swift"; sourceTree = SOURCE_ROOT; };
+		6D3684C323BF8CA400492195 /* String+SubscriptTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "String+SubscriptTests.swift"; path = "SwiftWingsTests/Extensions/String+SubscriptTests.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +95,8 @@
 		6D3684A823BF831800492195 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				6D3684A923BF834B00492195 /* NSObject+Name.swift */,
+				6D3684BD23BF8C2D00492195 /* NSObject */,
+				6D3684BE23BF8C3800492195 /* String */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -108,9 +113,42 @@
 		6D3684BA23BF847D00492195 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				6D3684BB23BF849900492195 /* NSObject+NameTests.swift */,
+				6D3684C123BF8C7B00492195 /* NSObject */,
+				6D3684C223BF8C8400492195 /* String */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6D3684BD23BF8C2D00492195 /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				6D3684A923BF834B00492195 /* NSObject+Name.swift */,
+			);
+			path = NSObject;
+			sourceTree = "<group>";
+		};
+		6D3684BE23BF8C3800492195 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				6D3684BF23BF8C5A00492195 /* String+Subscript.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		6D3684C123BF8C7B00492195 /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				6D3684BB23BF849900492195 /* NSObject+NameTests.swift */,
+			);
+			path = NSObject;
+			sourceTree = "<group>";
+		};
+		6D3684C223BF8C8400492195 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				6D3684C323BF8CA400492195 /* String+SubscriptTests.swift */,
+			);
+			path = String;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D3684C023BF8C5A00492195 /* String+Subscript.swift in Sources */,
 				6D3684AA23BF834B00492195 /* NSObject+Name.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -231,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D3684C423BF8CA400492195 /* String+SubscriptTests.swift in Sources */,
 				6D3684BC23BF849900492195 /* NSObject+NameTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
