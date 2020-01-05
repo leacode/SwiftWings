@@ -8,22 +8,14 @@ jobs:
     runs-on: macOS-latest
     strategy:
       matrix:
-        destination: ["OS=13.1,name=iPhone 11 Pro"]
+        destination: ['platform=iOS Simulator,OS=12.2,name=iPhone X', 'platform=tvOS Simulator,OS=12.2,name=Apple TV 4K']
+        scheme: ['SwiftWings']
     steps:
-      - uses: actions/checkout@v1
-      - name: Test on iOS - ${{ matrix.destination }}
+      - name: Checkout
+        uses: actions/checkout@master
+      - name: Build and test
         run: |
-          bundle exec rake xcode no_open=true
-          bundle exec rake build
-          bundle exec rake test
-      - name: Upload Code Coverage
-        run: bash <(curl -s https://codecov.io/bash) -J 'SwiftWings' -t ${ "a33179a1-74f6-4f36-91cc-3271548ce488" }
-      - name: Build for release on iOS - ${{ matrix.destination }}
-        run: bundle exec rake build_release
-#  spm:
-#    name: SPM
-#    runs-on: macOS-latest
-#    steps:
-#      - uses: actions/checkout@v1
-#      - name: SPM Test
-#        run: swift test
+          xcodebuild clean test -project SwiftWings.xcodeproj -scheme SwiftWings -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
+          bash <(curl -s https://codecov.io/bash) -J 'SwiftWings' -t ${{ secrets.CODECOV_TOKEN }}
+        env:
+          destination: ${{ matrix.destination }}
