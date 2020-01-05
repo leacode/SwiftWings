@@ -16,6 +16,7 @@ jobs:
       - name: Build and test
         run: |
           xcodebuild clean test -project SwiftWings.xcodeproj -scheme SwiftWings -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
-          bash <(curl -s https://codecov.io/bash) -J 'SwiftWings' -t ${{ secrets.CODECOV_TOKEN }}
         env:
           destination: ${{ matrix.destination }}
+      - name: Upload Code Coverage
+        run: bash <(curl -s https://codecov.io/bash) -J 'SwiftWings' -t ${{ secrets.CODECOV_TOKEN }}
