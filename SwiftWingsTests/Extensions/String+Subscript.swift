@@ -20,7 +20,10 @@ public extension String {
   ///
   /// - Parameter bounds: e.g. ( x...x )
   subscript(bounds: ClosedRange<Int>) -> String {
-    if bounds.lowerBound < 0 || bounds.upperBound > count - 1 { return "" }
+    if bounds.lowerBound < 0 ||
+      bounds.upperBound > count - 1 {
+      return ""
+    }
     return String(self[self.index(startIndex, offsetBy: bounds.lowerBound) ... self.index(self.startIndex, offsetBy: bounds.upperBound)])
   }
   
@@ -33,10 +36,16 @@ public extension String {
   ///     // Prints "345"
   ///
   /// - Parameter bounds: ( x..<x )
-  subscript(range: Range<Int>) -> String? {
-    guard let lowerIndex = index(startIndex, offsetBy: max(0, range.lowerBound), limitedBy: endIndex) else { return nil }
-    guard let upperIndex = index(lowerIndex, offsetBy: range.upperBound - range.lowerBound, limitedBy: endIndex) else { return nil }
+  subscript(range: Range<Int>) -> String {
+    guard let lowerIndex = index(startIndex,
+                                 offsetBy: max(0, range.lowerBound),
+                                 limitedBy: endIndex),
+      let upperIndex = index(lowerIndex,
+                             offsetBy: range.upperBound - max(0, range.lowerBound),
+                             limitedBy: endIndex)
+      else { return "" }
     return String(self[lowerIndex ..< upperIndex])
+        
   }
   
   /// Substring from a partial interval extending upward from a lower bound range
@@ -49,7 +58,10 @@ public extension String {
   ///
   /// - Parameter bounds: ( x... )
   subscript(bounds: PartialRangeFrom<Int>) -> String {
-    if bounds.lowerBound < 0 || bounds.lowerBound > count - 1 { return "" }
+    if bounds.lowerBound < 0 ||
+      bounds.lowerBound > count - 1 {
+      return ""
+    }
     return String(self[self.index(startIndex, offsetBy: bounds.lowerBound)...])
   }
   
@@ -63,7 +75,10 @@ public extension String {
   ///
   /// - Parameter bounds: ( ...x )
   subscript(bounds: PartialRangeThrough<Int>) -> String {
-    if bounds.upperBound < 0 || bounds.upperBound > count - 1 { return "" }
+    if bounds.upperBound < 0 ||
+      bounds.upperBound > count - 1 {
+      return ""
+    }
     return String(self[...self.index(startIndex, offsetBy: bounds.upperBound)])
   }
   
@@ -77,7 +92,10 @@ public extension String {
   ///
   /// - Parameter bounds: ( ..<x )
   subscript(bounds: PartialRangeUpTo<Int>) -> String {
-    if bounds.upperBound < 0 || bounds.upperBound > count { return "" }
+    if bounds.upperBound < 0 ||
+      bounds.upperBound > count {
+      return ""
+    }
     return String(self[..<self.index(startIndex, offsetBy: bounds.upperBound)])
   }
 }
