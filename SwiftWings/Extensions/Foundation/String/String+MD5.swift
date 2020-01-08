@@ -24,19 +24,6 @@ public extension String {
   }
 }
 
-extension Data {
-  var bytes: [UInt8] {
-    return [UInt8](self)
-  }
-}
-
-extension Int {
-  /** Array of bytes with optional padding (little-endian) */
-  func bytes(_ totalBytes: Int = MemoryLayout<Int>.size) -> [UInt8] {
-    return withUnsafeBytes(of: self.bigEndian) { Array($0) }
-  }
-}
-
 protocol HashProtocol {
   var message: Array<UInt8> { get }
   

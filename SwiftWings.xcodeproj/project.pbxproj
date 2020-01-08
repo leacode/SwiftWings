@@ -17,6 +17,16 @@
 		6D79FFD423C3247A00C163FC /* String+ValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D79FFD323C3247A00C163FC /* String+ValidationTests.swift */; };
 		6DE8437E23C53C1A00CF59B9 /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE8437D23C53C1A00CF59B9 /* String+MD5.swift */; };
 		6DE8438023C53C9B00CF59B9 /* String+MD5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE8437F23C53C9B00CF59B9 /* String+MD5Tests.swift */; };
+		6DE8438323C55EAA00CF59B9 /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE8438223C55EAA00CF59B9 /* Int+Extensions.swift */; };
+		6DE8438623C55ED100CF59B9 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE8438523C55ED100CF59B9 /* Data+Extensions.swift */; };
+		6DE8438823C5603200CF59B9 /* Data+MimeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE8438723C5603200CF59B9 /* Data+MimeType.swift */; };
+		6DE8438B23C564E900CF59B9 /* Data+MimeTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE8438A23C564E900CF59B9 /* Data+MimeTypeTests.swift */; };
+		6DE8438F23C569D300CF59B9 /* amrFile.amr in Resources */ = {isa = PBXBuildFile; fileRef = 6DE8438D23C569D300CF59B9 /* amrFile.amr */; };
+		6DE8439023C569D300CF59B9 /* wavFile.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6DE8438E23C569D300CF59B9 /* wavFile.wav */; };
+		6DE8439423C56A7700CF59B9 /* Data+File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE8439323C56A7700CF59B9 /* Data+File.swift */; };
+		6DE8439723C56C6F00CF59B9 /* Int+ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE8439623C56C6F00CF59B9 /* Int+ExtensionsTests.swift */; };
+		6DE8439923C56EC800CF59B9 /* AudioMimeTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE8439823C56EC800CF59B9 /* AudioMimeTypeTests.swift */; };
+		6DE8439B23C56ED200CF59B9 /* MimeTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE8439A23C56ED200CF59B9 /* MimeTypeTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +53,16 @@
 		6D79FFD323C3247A00C163FC /* String+ValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ValidationTests.swift"; sourceTree = "<group>"; };
 		6DE8437D23C53C1A00CF59B9 /* String+MD5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+MD5.swift"; sourceTree = "<group>"; };
 		6DE8437F23C53C9B00CF59B9 /* String+MD5Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+MD5Tests.swift"; sourceTree = "<group>"; };
+		6DE8438223C55EAA00CF59B9 /* Int+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
+		6DE8438523C55ED100CF59B9 /* Data+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
+		6DE8438723C5603200CF59B9 /* Data+MimeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+MimeType.swift"; sourceTree = "<group>"; };
+		6DE8438A23C564E900CF59B9 /* Data+MimeTypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+MimeTypeTests.swift"; sourceTree = "<group>"; };
+		6DE8438D23C569D300CF59B9 /* amrFile.amr */ = {isa = PBXFileReference; lastKnownFileType = file; path = amrFile.amr; sourceTree = "<group>"; };
+		6DE8438E23C569D300CF59B9 /* wavFile.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = wavFile.wav; sourceTree = "<group>"; };
+		6DE8439323C56A7700CF59B9 /* Data+File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+File.swift"; sourceTree = "<group>"; };
+		6DE8439623C56C6F00CF59B9 /* Int+ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+ExtensionsTests.swift"; sourceTree = "<group>"; };
+		6DE8439823C56EC800CF59B9 /* AudioMimeTypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioMimeTypeTests.swift; sourceTree = "<group>"; };
+		6DE8439A23C56ED200CF59B9 /* MimeTypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimeTypeTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +123,8 @@
 		6D3684A823BF831800492195 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				6DE8436C23C41D0900CF59B9 /* Date */,
+				6DE8438423C55EC800CF59B9 /* Data */,
+				6DE8438123C55E9100CF59B9 /* Int */,
 				6D3684BD23BF8C2D00492195 /* NSObject */,
 				6D3684BE23BF8C3800492195 /* String */,
 			);
@@ -113,7 +134,9 @@
 		6D3684B023BF844000492195 /* SwiftWingsTests */ = {
 			isa = PBXGroup;
 			children = (
+				6DE8439123C56A6100CF59B9 /* TestTypes */,
 				6D3684BA23BF847D00492195 /* Extensions */,
+				6DE8438C23C569C700CF59B9 /* Data */,
 				6D3684B323BF844000492195 /* Info.plist */,
 			);
 			path = SwiftWingsTests;
@@ -122,6 +145,8 @@
 		6D3684BA23BF847D00492195 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				6DE8438923C564DC00CF59B9 /* Data */,
+				6DE8439523C56C5F00CF59B9 /* Int */,
 				6D3684C123BF8C7B00492195 /* NSObject */,
 				6D3684C223BF8C8400492195 /* String */,
 			);
@@ -164,11 +189,64 @@
 			path = String;
 			sourceTree = "<group>";
 		};
-		6DE8436C23C41D0900CF59B9 /* Date */ = {
+		6DE8438123C55E9100CF59B9 /* Int */ = {
 			isa = PBXGroup;
 			children = (
+				6DE8438223C55EAA00CF59B9 /* Int+Extensions.swift */,
 			);
-			path = Date;
+			path = Int;
+			sourceTree = "<group>";
+		};
+		6DE8438423C55EC800CF59B9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				6DE8438523C55ED100CF59B9 /* Data+Extensions.swift */,
+				6DE8438723C5603200CF59B9 /* Data+MimeType.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		6DE8438923C564DC00CF59B9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				6DE8438A23C564E900CF59B9 /* Data+MimeTypeTests.swift */,
+				6DE8439823C56EC800CF59B9 /* AudioMimeTypeTests.swift */,
+				6DE8439A23C56ED200CF59B9 /* MimeTypeTests.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		6DE8438C23C569C700CF59B9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				6DE8438D23C569D300CF59B9 /* amrFile.amr */,
+				6DE8438E23C569D300CF59B9 /* wavFile.wav */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		6DE8439123C56A6100CF59B9 /* TestTypes */ = {
+			isa = PBXGroup;
+			children = (
+				6DE8439223C56A6800CF59B9 /* Extensions */,
+			);
+			path = TestTypes;
+			sourceTree = "<group>";
+		};
+		6DE8439223C56A6800CF59B9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6DE8439323C56A7700CF59B9 /* Data+File.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6DE8439523C56C5F00CF59B9 /* Int */ = {
+			isa = PBXGroup;
+			children = (
+				6DE8439623C56C6F00CF59B9 /* Int+ExtensionsTests.swift */,
+			);
+			path = Int;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +349,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DE8438F23C569D300CF59B9 /* amrFile.amr in Resources */,
+				6DE8439023C569D300CF59B9 /* wavFile.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +364,10 @@
 				6D79FFD223C3246400C163FC /* String+Validation.swift in Sources */,
 				6D3684C023BF8C5A00492195 /* String+Subscript.swift in Sources */,
 				6DE8437E23C53C1A00CF59B9 /* String+MD5.swift in Sources */,
+				6DE8438623C55ED100CF59B9 /* Data+Extensions.swift in Sources */,
 				6D3684AA23BF834B00492195 /* NSObject+Name.swift in Sources */,
+				6DE8438823C5603200CF59B9 /* Data+MimeType.swift in Sources */,
+				6DE8438323C55EAA00CF59B9 /* Int+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,10 +375,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DE8438B23C564E900CF59B9 /* Data+MimeTypeTests.swift in Sources */,
+				6DE8439723C56C6F00CF59B9 /* Int+ExtensionsTests.swift in Sources */,
+				6DE8439923C56EC800CF59B9 /* AudioMimeTypeTests.swift in Sources */,
 				6D79FFD423C3247A00C163FC /* String+ValidationTests.swift in Sources */,
 				6D3684C423BF8CA400492195 /* String+SubscriptTests.swift in Sources */,
 				6D3684BC23BF849900492195 /* NSObject+NameTests.swift in Sources */,
 				6DE8438023C53C9B00CF59B9 /* String+MD5Tests.swift in Sources */,
+				6DE8439B23C56ED200CF59B9 /* MimeTypeTests.swift in Sources */,
+				6DE8439423C56A7700CF59B9 /* Data+File.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
