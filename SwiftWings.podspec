@@ -1,5 +1,5 @@
 #
-# Be sure to run `pod lib lint Earth.podspec' to ensure this is a
+# Be sure to run `pod lib lint SwiftWings.podspec' to ensure this is a
 # valid spec before submitting.
 #
 # Any lines starting with a # are optional, but their use is encouraged
@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SwiftWings'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.swift_versions   = '5.0'
   s.summary          = 'A collection of Swift extensions for all platforms'
   s.description      = <<-DESC
