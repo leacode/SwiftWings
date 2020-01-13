@@ -3,7 +3,7 @@ A collection of Swift extensions for all platforms.
 leacode/SwiftWings
 
 [![Version](https://img.shields.io/cocoapods/v/SwiftWings.svg?style=flat)](https://cocoapods.org/pods/SwiftWings)
-[![License](https://img.shields.io/cocoapods/l/SwiftWings.svg?style=flat)](https://cocoapods.org/pods/SwiftWings)
+[![License](https://img.shields.io/cocoapods/l/SwiftWings.svg?style=flat)](https://github.com/leacode/SwiftWings/blob/master/LICENSE)
 [![Platform](https://img.shields.io/cocoapods/p/SwiftWings.svg?style=flat)](https://cocoapods.org/pods/SwiftWings)
 [![Codecov](https://codecov.io/gh/leacode/SwiftWings/branch/master/graph/badge.svg)](https://codecov.io/gh/leacode/SwiftWings)
 
@@ -11,6 +11,8 @@ leacode/SwiftWings
 
 - iOS 8.0+ / macOS 10.10+ 
 - Swift 5.0+
+- Watch OS 2.0+
+- TV OS 9.0+
 - Linux can run Swift
 
 ## Installation
