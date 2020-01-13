@@ -1,10 +1,11 @@
 # SwiftWings
-A collection of Swift extensions for all platforms.
 
 [![Version](https://img.shields.io/cocoapods/v/SwiftWings.svg?style=flat)](https://cocoapods.org/pods/SwiftWings)
 [![License](https://img.shields.io/cocoapods/l/SwiftWings.svg?style=flat)](https://github.com/leacode/SwiftWings/blob/master/LICENSE)
 [![Platform](https://img.shields.io/cocoapods/p/SwiftWings.svg?style=flat)](https://cocoapods.org/pods/SwiftWings)
 [![Codecov](https://codecov.io/gh/leacode/SwiftWings/branch/master/graph/badge.svg)](https://codecov.io/gh/leacode/SwiftWings)
+
+`SwiftWings` is A collection of Swift extensions. It support iOS, macOS, tvOS, watchOS. You can also integrate the framework in your server side project by using Swift Package Manager.
 
 ## Requirements
 
@@ -24,7 +25,7 @@ A collection of Swift extensions for all platforms.
 $ gem install cocoapods
 ```
 
-Earth is available through [CocoaPods](https://cocoapods.org). To install
+SwiftWings is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
@@ -52,7 +53,7 @@ $ brew update
 $ brew install carthage
 ```
 
-To integrate Earth into your Xcode project using Carthage, specify it in your `Cartfile`:
+To integrate SwiftWings into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
 github "leacode/SwiftWings"
@@ -62,15 +63,20 @@ Run `carthage update` to build the framework and drag the built `SwiftWings.fram
 
 ### Swift Package Manager
 
-#### For iOS/ MacOS:
+The [Swift Package Manager](https://swift.org/package-manager/) is a tool for managing the distribution of Swift code. It’s integrated with the Swift build system to automate the process of downloading, compiling, and linking dependencies.
 
-1. Star this repo.
-2. Login your github account in Xcode.
-3. Go to Swift Packages tab in your project settings, click add button and search SwiftWings, add it to your project.
-4. Add Earth.framework after SPM finished downloading the source code.
+#### iOS/ MacOS:
 
-#### For Server Side:
+To integrate `SwiftWings` into your Xcode project using Xcode 11, specify it in `File > Swift Packages > Add`:
 
+```
+https://github.com/leacode/SwiftWings
+```
+
+
+#### Server Side:
+
+Add dependency in Package.swift:
 
 ```
 dependencies: [
@@ -95,5 +101,5 @@ dependencies: [
 
 ## License
 
-Earth is available under the MIT license. See the LICENSE file for more info.
+`SwiftWings` is available under the MIT license. See the `LICENSE` file for more info.
 
