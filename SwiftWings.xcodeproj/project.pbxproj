@@ -9,6 +9,27 @@
 /* Begin PBXBuildFile section */
 		6D21BE6823C57D4F00526DAF /* String+SubscriptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D21BE6723C57D4F00526DAF /* String+SubscriptTests.swift */; };
 		6D21BE6A23C57D5D00526DAF /* String+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D21BE6923C57D5D00526DAF /* String+Subscript.swift */; };
+		6D21BE7023C73E6B00526DAF /* pngFile.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D21BE6E23C73E1D00526DAF /* pngFile.png */; };
+		6D21BE7623C7585800526DAF /* flacFile.flac in Resources */ = {isa = PBXBuildFile; fileRef = 6D21BE7523C7585800526DAF /* flacFile.flac */; };
+		6D21BE7823C758FF00526DAF /* oggFile.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 6D21BE7723C758FF00526DAF /* oggFile.ogg */; };
+		6D21BE7A23C804EB00526DAF /* mp3File.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6D21BE7923C804EB00526DAF /* mp3File.mp3 */; };
+		6D21BE7E23C810BB00526DAF /* jpgFile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D21BE7D23C810BB00526DAF /* jpgFile.jpg */; };
+		6D21BE8023C8111000526DAF /* jpegFile.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6D21BE7F23C8110F00526DAF /* jpegFile.jpeg */; };
+		6D21BE8223C819D100526DAF /* tiffFile.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 6D21BE8123C819D100526DAF /* tiffFile.tiff */; };
+		6D21BE8423C81A3A00526DAF /* webpFile.webp in Resources */ = {isa = PBXBuildFile; fileRef = 6D21BE8323C81A3A00526DAF /* webpFile.webp */; };
+		6D21BE8623C81CD600526DAF /* gifFile.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6D21BE8523C81CD600526DAF /* gifFile.gif */; };
+		6D21BE8823C81D5B00526DAF /* psdFile.psd in Resources */ = {isa = PBXBuildFile; fileRef = 6D21BE8723C81D5B00526DAF /* psdFile.psd */; };
+		6D21BE8C23C828D400526DAF /* rarFile.rar in Resources */ = {isa = PBXBuildFile; fileRef = 6D21BE8B23C828D300526DAF /* rarFile.rar */; };
+		6D21BE8E23C82B5B00526DAF /* tarFile.tar in Resources */ = {isa = PBXBuildFile; fileRef = 6D21BE8D23C82B5B00526DAF /* tarFile.tar */; };
+		6D21BE9023C82BE600526DAF /* gzFile.gz in Resources */ = {isa = PBXBuildFile; fileRef = 6D21BE8F23C82BE600526DAF /* gzFile.gz */; };
+		6D21BE9223C82C3500526DAF /* bz2File.bz2 in Resources */ = {isa = PBXBuildFile; fileRef = 6D21BE9123C82C3500526DAF /* bz2File.bz2 */; };
+		6D21BE9423C82CCD00526DAF /* sqliteFile.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 6D21BE9323C82CCD00526DAF /* sqliteFile.sqlite */; };
+		6D21BE9623C8353C00526DAF /* bmpFile.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 6D21BE9523C8353C00526DAF /* bmpFile.bmp */; };
+		6D21BE9823C83CC000526DAF /* icoFile.ico in Resources */ = {isa = PBXBuildFile; fileRef = 6D21BE9723C83CC000526DAF /* icoFile.ico */; };
+		6D21BE9A23C83D8800526DAF /* opusFile.opus in Resources */ = {isa = PBXBuildFile; fileRef = 6D21BE9923C83D8800526DAF /* opusFile.opus */; };
+		6D21BE9C23C83DF900526DAF /* m4aFile.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6D21BE9B23C83DF900526DAF /* m4aFile.m4a */; };
+		6D21BE9E23C83FCD00526DAF /* midFile.mid in Resources */ = {isa = PBXBuildFile; fileRef = 6D21BE9D23C83FCD00526DAF /* midFile.mid */; };
+		6D21BEA223C84A9600526DAF /* MimeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D21BEA123C84A9600526DAF /* MimeType.swift */; };
 		6D3684A023BF82A600492195 /* SwiftWings.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D36849E23BF82A600492195 /* SwiftWings.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D3684AA23BF834B00492195 /* NSObject+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3684A923BF834B00492195 /* NSObject+Name.swift */; };
 		6D3684B423BF844000492195 /* SwiftWings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D36849B23BF82A600492195 /* SwiftWings.framework */; };
@@ -42,6 +63,27 @@
 /* Begin PBXFileReference section */
 		6D21BE6723C57D4F00526DAF /* String+SubscriptTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+SubscriptTests.swift"; sourceTree = "<group>"; };
 		6D21BE6923C57D5D00526DAF /* String+Subscript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Subscript.swift"; sourceTree = "<group>"; };
+		6D21BE6E23C73E1D00526DAF /* pngFile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pngFile.png; sourceTree = "<group>"; };
+		6D21BE7523C7585800526DAF /* flacFile.flac */ = {isa = PBXFileReference; lastKnownFileType = file; path = flacFile.flac; sourceTree = "<group>"; };
+		6D21BE7723C758FF00526DAF /* oggFile.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = oggFile.ogg; sourceTree = "<group>"; };
+		6D21BE7923C804EB00526DAF /* mp3File.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mp3File.mp3; sourceTree = "<group>"; };
+		6D21BE7D23C810BB00526DAF /* jpgFile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jpgFile.jpg; sourceTree = "<group>"; };
+		6D21BE7F23C8110F00526DAF /* jpegFile.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jpegFile.jpeg; sourceTree = "<group>"; };
+		6D21BE8123C819D100526DAF /* tiffFile.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = tiffFile.tiff; sourceTree = "<group>"; };
+		6D21BE8323C81A3A00526DAF /* webpFile.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = webpFile.webp; sourceTree = "<group>"; };
+		6D21BE8523C81CD600526DAF /* gifFile.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gifFile.gif; sourceTree = "<group>"; };
+		6D21BE8723C81D5B00526DAF /* psdFile.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = psdFile.psd; sourceTree = "<group>"; };
+		6D21BE8B23C828D300526DAF /* rarFile.rar */ = {isa = PBXFileReference; lastKnownFileType = file; path = rarFile.rar; sourceTree = "<group>"; };
+		6D21BE8D23C82B5B00526DAF /* tarFile.tar */ = {isa = PBXFileReference; lastKnownFileType = archive.tar; path = tarFile.tar; sourceTree = "<group>"; };
+		6D21BE8F23C82BE600526DAF /* gzFile.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = gzFile.gz; sourceTree = "<group>"; };
+		6D21BE9123C82C3500526DAF /* bz2File.bz2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bz2File.bz2; sourceTree = "<group>"; };
+		6D21BE9323C82CCD00526DAF /* sqliteFile.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = sqliteFile.sqlite; sourceTree = "<group>"; };
+		6D21BE9523C8353C00526DAF /* bmpFile.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = bmpFile.bmp; sourceTree = "<group>"; };
+		6D21BE9723C83CC000526DAF /* icoFile.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = icoFile.ico; sourceTree = "<group>"; };
+		6D21BE9923C83D8800526DAF /* opusFile.opus */ = {isa = PBXFileReference; lastKnownFileType = file; path = opusFile.opus; sourceTree = "<group>"; };
+		6D21BE9B23C83DF900526DAF /* m4aFile.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = m4aFile.m4a; sourceTree = "<group>"; };
+		6D21BE9D23C83FCD00526DAF /* midFile.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = midFile.mid; sourceTree = "<group>"; };
+		6D21BEA123C84A9600526DAF /* MimeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimeType.swift; sourceTree = "<group>"; };
 		6D36849B23BF82A600492195 /* SwiftWings.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftWings.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D36849E23BF82A600492195 /* SwiftWings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftWings.h; sourceTree = "<group>"; };
 		6D36849F23BF82A600492195 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -202,6 +244,7 @@
 			children = (
 				6DE8438523C55ED100CF59B9 /* Data+Extensions.swift */,
 				6DE8438723C5603200CF59B9 /* Data+MimeType.swift */,
+				6D21BEA123C84A9600526DAF /* MimeType.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -219,6 +262,26 @@
 		6DE8438C23C569C700CF59B9 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				6D21BE9D23C83FCD00526DAF /* midFile.mid */,
+				6D21BE9B23C83DF900526DAF /* m4aFile.m4a */,
+				6D21BE9923C83D8800526DAF /* opusFile.opus */,
+				6D21BE9723C83CC000526DAF /* icoFile.ico */,
+				6D21BE9523C8353C00526DAF /* bmpFile.bmp */,
+				6D21BE9323C82CCD00526DAF /* sqliteFile.sqlite */,
+				6D21BE9123C82C3500526DAF /* bz2File.bz2 */,
+				6D21BE8F23C82BE600526DAF /* gzFile.gz */,
+				6D21BE8D23C82B5B00526DAF /* tarFile.tar */,
+				6D21BE8B23C828D300526DAF /* rarFile.rar */,
+				6D21BE8723C81D5B00526DAF /* psdFile.psd */,
+				6D21BE8523C81CD600526DAF /* gifFile.gif */,
+				6D21BE8323C81A3A00526DAF /* webpFile.webp */,
+				6D21BE8123C819D100526DAF /* tiffFile.tiff */,
+				6D21BE7F23C8110F00526DAF /* jpegFile.jpeg */,
+				6D21BE7D23C810BB00526DAF /* jpgFile.jpg */,
+				6D21BE7923C804EB00526DAF /* mp3File.mp3 */,
+				6D21BE7723C758FF00526DAF /* oggFile.ogg */,
+				6D21BE7523C7585800526DAF /* flacFile.flac */,
+				6D21BE6E23C73E1D00526DAF /* pngFile.png */,
 				6DE8438D23C569D300CF59B9 /* amrFile.amr */,
 				6DE8438E23C569D300CF59B9 /* wavFile.wav */,
 			);
@@ -349,8 +412,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D21BE8823C81D5B00526DAF /* psdFile.psd in Resources */,
+				6D21BE7823C758FF00526DAF /* oggFile.ogg in Resources */,
+				6D21BE9E23C83FCD00526DAF /* midFile.mid in Resources */,
+				6D21BE8023C8111000526DAF /* jpegFile.jpeg in Resources */,
+				6D21BE9823C83CC000526DAF /* icoFile.ico in Resources */,
 				6DE8438F23C569D300CF59B9 /* amrFile.amr in Resources */,
+				6D21BE8423C81A3A00526DAF /* webpFile.webp in Resources */,
+				6D21BE8C23C828D400526DAF /* rarFile.rar in Resources */,
+				6D21BE8E23C82B5B00526DAF /* tarFile.tar in Resources */,
+				6D21BE9023C82BE600526DAF /* gzFile.gz in Resources */,
+				6D21BE8223C819D100526DAF /* tiffFile.tiff in Resources */,
+				6D21BE8623C81CD600526DAF /* gifFile.gif in Resources */,
+				6D21BE9C23C83DF900526DAF /* m4aFile.m4a in Resources */,
 				6DE8439023C569D300CF59B9 /* wavFile.wav in Resources */,
+				6D21BE9623C8353C00526DAF /* bmpFile.bmp in Resources */,
+				6D21BE7E23C810BB00526DAF /* jpgFile.jpg in Resources */,
+				6D21BE9A23C83D8800526DAF /* opusFile.opus in Resources */,
+				6D21BE9223C82C3500526DAF /* bz2File.bz2 in Resources */,
+				6D21BE7023C73E6B00526DAF /* pngFile.png in Resources */,
+				6D21BE7623C7585800526DAF /* flacFile.flac in Resources */,
+				6D21BE9423C82CCD00526DAF /* sqliteFile.sqlite in Resources */,
+				6D21BE7A23C804EB00526DAF /* mp3File.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +461,7 @@
 				6DE8438B23C564E900CF59B9 /* Data+MimeTypeTests.swift in Sources */,
 				6DE8439723C56C6F00CF59B9 /* Int+ExtensionsTests.swift in Sources */,
 				6DE8439923C56EC800CF59B9 /* AudioMimeTypeTests.swift in Sources */,
+				6D21BEA223C84A9600526DAF /* MimeType.swift in Sources */,
 				6D79FFD423C3247A00C163FC /* String+ValidationTests.swift in Sources */,
 				6D3684BC23BF849900492195 /* NSObject+NameTests.swift in Sources */,
 				6DE8438023C53C9B00CF59B9 /* String+MD5Tests.swift in Sources */,

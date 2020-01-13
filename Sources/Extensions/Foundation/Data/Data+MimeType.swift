@@ -8,242 +8,119 @@
 
 import Foundation
 
-private let mimeTypes = [
-    "3gp":      "video/3gpp",
-    "3gpp":     "video/3gpp",
-    "7z":       "application/x-7z-compressed",
-    "ai":       "application/postscript",
-    "asf":      "video/x-ms-asf",
-    "asx":      "video/x-ms-asf",
-    "atom":     "application/atom+xml",
-    "avi":      "video/x-msvideo",
-    "bin":      "application/octet-stream",
-    "bmp":      "image/x-ms-bmp",
-    "cco":      "application/x-cocoa",
-    "crt":      "application/x-x509-ca-cert",
-    "css":      "text/css",
-    "deb":      "application/octet-stream",
-    "der":      "application/x-x509-ca-cert",
-    "dll":      "application/octet-stream",
-    "dmg":      "application/octet-stream",
-    "doc":      "application/msword",
-    "docx":     "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    "ear":      "application/java-archive",
-    "eot":      "application/vnd.ms-fontobject",
-    "eps":      "application/postscript",
-    "exe":      "application/octet-stream",
-    "flv":      "video/x-flv",
-    "gif":      "image/gif",
-    "hqx":      "application/mac-binhex40",
-    "htc":      "text/x-component",
-    "htm":      "text/html",
-    "html":     "text/html",
-    "ico":      "image/x-icon",
-    "img":      "application/octet-stream",
-    "iso":      "application/octet-stream",
-    "jad":      "text/vnd.sun.j2me.app-descriptor",
-    "jar":      "application/java-archive",
-    "jardiff":  "application/x-java-archive-diff",
-    "jng":      "image/x-jng",
-    "jnlp":     "application/x-java-jnlp-file",
-    "jpeg":     "image/jpeg",
-    "jpg":      "image/jpeg",
-    "js":       "application/javascript",
-    "json":     "application/json",
-    "kar":      "audio/midi",
-    "kml":      "application/vnd.google-earth.kml+xml",
-    "kmz":      "application/vnd.google-earth.kmz",
-    "m3u8":     "application/vnd.apple.mpegurl",
-    "m4a":      "audio/x-m4a",
-    "m4v":      "video/x-m4v",
-    "mid":      "audio/midi",
-    "midi":     "audio/midi",
-    "mml":      "text/mathml",
-    "mng":      "video/x-mng",
-    "mov":      "video/quicktime",
-    "mp3":      "audio/mpeg",
-    "mp4":      "video/mp4",
-    "mpeg":     "video/mpeg",
-    "mpg":      "video/mpeg",
-    "msi":      "application/octet-stream",
-    "msm":      "application/octet-stream",
-    "msp":      "application/octet-stream",
-    "ogg":      "audio/ogg",
-    "pdb":      "application/x-pilot",
-    "pdf":      "application/pdf",
-    "pem":      "application/x-x509-ca-cert",
-    "pl":       "application/x-perl",
-    "pm":       "application/x-perl",
-    "png":      "image/png",
-    "ppt":      "application/vnd.ms-powerpoint",
-    "pptx":     "application/vnd.openxmlformats-officedocument.presentationml.presentation",
-    "prc":      "application/x-pilot",
-    "ps":       "application/postscript",
-    "ra":       "audio/x-realaudio",
-    "rar":      "application/x-rar-compressed",
-    "rpm":      "application/x-redhat-package-manager",
-    "rss":      "application/rss+xml",
-    "rtf":      "application/rtf",
-    "run":      "application/x-makeself",
-    "sea":      "application/x-sea",
-    "shtml":    "text/html",
-    "sit":      "application/x-stuffit",
-    "svg":      "image/svg+xml",
-    "svgz":     "image/svg+xml",
-    "swf":      "application/x-shockwave-flash",
-    "tcl":      "application/x-tcl",
-    "tif":      "image/tiff",
-    "tiff":     "image/tiff",
-    "tk":       "application/x-tcl",
-    "ts":       "video/mp2t",
-    "txt":      "text/plain",
-    "war":      "application/java-archive",
-    "wbmp":     "image/vnd.wap.wbmp",
-    "webm":     "video/webm",
-    "webp":     "image/webp",
-    "wml":      "text/vnd.wap.wml",
-    "wmlc":     "application/vnd.wap.wmlc",
-    "wmv":      "video/x-ms-wmv",
-    "woff":     "application/font-woff",
-    "xhtml":    "application/xhtml+xml",
-    "xls":      "application/vnd.ms-excel",
-    "xlsx":     "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-    "xml":      "text/xml",
-    "xpi":      "application/x-xpinstall",
-    "xspf":     "application/xspf+xml",
-    "zip":      "application/zip",
-]
 
-public enum AudioMimeType: String {
-  case amr         = "audio/amr"
-  case midi        = "audio/midi"
-  case mp3         = "audio/mpeg"
-  case ogg         = "audio/ogg"
-  case m4a         = "audio/x-m4a"
-  case ra          = "audio/x-realaudio"
-  case unknown     = "unknown"
-}
 
-extension AudioMimeType: ExpressibleByStringLiteral {
-  public init(stringLiteral value: String) {
-    self = AudioMimeType(rawValue: value) ?? AudioMimeType.unknown
-  }
-}
-
-public enum MimeType: String {
-  case amr         = "audio/amr"
-  case midi        = "audio/midi"
-  case mp3         = "audio/mpeg"
-  case ogg         = "audio/ogg"
-  case m4a         = "audio/x-m4a"
-  case ra          = "audio/x-realaudio"
-  case html        = "text/html"
-  case css         = "text/css"
-  case xml         = "text/xml"
-  case gif         = "image/gif"
-  case jpeg        = "image/jpeg"
-  case js          = "application/javascript"
-  case atom        = "application/atom+xml"
-  case rss         = "application/rss+xml"
-  case mml         = "text/mathml"
-  case txt         = "text/plain"
-  case jad         = "text/vnd.sun.j2me.app-descriptor"
-  case wml         = "text/vnd.wap.wml"
-  case htc         = "text/x-component"
-  case png         = "image/png"
-  case tiff        = "image/tiff"
-  case wbmp        = "image/vnd.wap.wbmp"
-  case ico         = "image/x-icon"
-  case jng         = "image/x-jng"
-  case bmp         = "image/x-ms-bmp"
-  case svg         = "image/svg+xml"
-  case webp        = "image/webp"
-  case woff        = "application/font-woff"
-  case javaArchive = "application/java-archive"
-  case json        = "application/json"
-  case hqx         = "application/mac-binhex40"
-  case doc         = "application/msword"
-  case pdf         = "application/pdf"
-  case eps         = "application/postscript"
-  case rtf         = "application/rtf"
-  case m3u8        = "application/vnd.apple.mpegurl"
-  case xls         = "application/vnd.ms-excel"
-  case eot         = "application/vnd.ms-fontobject"
-  case ppt         = "application/vnd.ms-powerpoint"
-  case wmlc        = "application/vnd.wap.wmlc"
-  case kml         = "application/vnd.google-earth.kml+xml"
-  case kmz         = "application/vnd.google-earth.kmz"
-  case x7z         = "application/x-7z-compressed"
-  case cco         = "application/x-cocoa"
-  case jardiff     = "application/x-java-archive-diff"
-  case jnlp        = "application/x-java-jnlp-file"
-  case run         = "application/x-makeself"
-  case pl          = "application/x-perl"
-  case prc         = "application/x-pilot"
-  case rar         = "application/x-rar-compressed"
-  case rpm         = "application/x-redhat-package-manager"
-  case sea         = "application/x-sea"
-  case swf         = "application/x-shockwave-flash"
-  case sit         = "application/x-stuffit"
-  case tcl         = "application/x-tcl"
-  case crt         = "application/x-x509-ca-cert"
-  case xpi         = "application/x-xpinstall"
-  case xhtml       = "application/xhtml+xml"
-  case xspf        = "application/xspf+xml"
-  case zip         = "application/zip"
-  case bin         = "application/octet-stream"
-  case docx        = "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
-  case xlsx        = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
-  case pptx        = "application/vnd.openxmlformats-officedocument.presentationml.presentation"
-  case v3gpp       = "video/3gpp"
-  case ts          = "video/mp2t"
-  case mp4         = "video/mp4"
-  case mpeg        = "video/mpeg"
-  case mov         = "video/quicktime"
-  case webm        = "video/webm"
-  case flv         = "video/x-flv"
-  case m4v         = "video/x-m4v"
-  case mng         = "video/x-mng"
-  case asf         = "video/x-ms-asf"
-  case wmv         = "video/x-ms-wmv"
-  case avi         = "video/x-msvideo"
-  case unknown     = "unknown"
-  
-  public init(pathOrFileName: String) {
-    if let fileName = pathOrFileName.split(separator: ".").last {
-      let fileExtension = String(fileName)
-      if let fileMimeTypeName = mimeTypes[fileExtension] {
-        self = MimeType(stringLiteral: fileMimeTypeName)
-        return
-      }
-    }
-    self = .unknown
-  }
-}
-
-extension MimeType: ExpressibleByStringLiteral {
-  public init(stringLiteral value: String) {
-    self = MimeType(rawValue: value) ?? MimeType.unknown
-  }
-}
 
 public extension Data {
   
+  // MARK: - Audio Types
+  
   var isAmr: Bool {
-    let len: Int = 6
-    var byteData = [UInt8](repeating: 0, count: len)
-    copyBytes(to: &byteData, count: len)
-
-    if byteData[0] == 0x23 &&
-      byteData[1] == 0x21 &&
-      byteData[2] == 0x41 &&
-      byteData[3] == 0x4D &&
-      byteData[4] == 0x52 &&
-      byteData[5] == 0x0A {
-        return true
-    }
-    return false
+    return matches(bytes: [0x23, 0x21, 0x41,
+                           0x4D, 0x52, 0x0A])
+  }
+  
+  var isMp3: Bool {
+    return matches(bytes: [0x49, 0x44, 0x33]) ||
+      matches(bytes: [0xFF, 0xFB])
+  }
+  
+  var isOgg: Bool {
+    return matches(bytes: [0x4F, 0x67, 0x67, 0x53])
+  }
+  
+  var isFlac: Bool {
+    return matches(bytes: [0x66, 0x4C, 0x61, 0x43])
+  }
+  
+  var isWav: Bool {
+    return matches(bytes: [0x52, 0x49, 0x46, 0x46]) &&
+      matches(bytes: [0x57, 0x41, 0x56, 0x45], range: 8...11)
+  }
+  
+  var isMid: Bool {
+    return matches(bytes: [0x4D, 0x54, 0x68, 0x64])
+  }
+  
+  var isM4a: Bool {
+    return matches(bytes: [0x4D, 0x34, 0x41, 0x20]) ||
+      matches(bytes: [0x66, 0x74, 0x79, 0x70,
+                      0x4D, 0x34, 0x41],
+              range: 4...10)
+  }
+  
+  var isOpus: Bool {
+    return matches(bytes: [0x4F, 0x70, 0x75, 0x73,
+                           0x48, 0x65, 0x61, 0x64],
+                   range: 28...35)
+  }
+  
+  // MARK: - Image Types
+  
+  var isPng: Bool {
+    return matches(bytes: [0x89, 0x50, 0x4E, 0x47])
+  }
+  
+  var isJPEG: Bool {
+    return matches(bytes: [0xFF, 0xD8, 0xFF])
+  }
+  
+  var isJpg: Bool {
+    return isJPEG
+  }
+  
+  var isGif: Bool {
+    return matches(bytes: [0x47, 0x49, 0x46])
+  }
+  
+  var isWebp: Bool {
+    return matches(bytes: [0x57, 0x45, 0x42, 0x50], range: 8...11)
+  }
+  
+  var isTiff: Bool {
+    return matches(bytes: [0x49, 0x49, 0x2A, 0x00]) ||
+      matches(bytes: [0x4D, 0x4D, 0x00, 0x2A])
+  }
+  
+  var isBmp: Bool {
+    return matches(bytes: [0x42, 0x4D])
+  }
+  
+  var isPsd: Bool {
+    return matches(bytes: [0x38, 0x42, 0x50, 0x53])
+  }
+  
+  // MARK: - Application Types
+  
+  var isIco: Bool {
+    return matches(bytes: [0x00, 0x00, 0x01, 0x00])
+  }
+  
+  var isSqlite: Bool {
+    return matches(bytes: [0x53, 0x51, 0x4C, 0x69])
+  }
+  
+  var isTar: Bool {
+    return matches(bytes: [0x75, 0x73, 0x74, 0x61, 0x72],
+                   range: 257...261)
+  }
+  
+  var isRar: Bool {
+    return matches(bytes: [0x52, 0x61, 0x72, 0x21, 0x1A, 0x07]) &&
+      (matches(bytes: [0x0], range: 6...6) ||
+        matches(bytes: [0x1], range: 6...6))
+  }
+  
+  var isGzip: Bool {
+    return matches(bytes: [0x1F, 0x8B, 0x08])
+  }
+  
+  var isBz2: Bool {
+    return matches(bytes: [0x42, 0x5A, 0x68])
+  }
+  
+  private func matches(bytes: [UInt8], range: CountableClosedRange<Int>? = nil) -> Bool {
+    return Array(self.bytes[range ?? 0...(bytes.count - 1)]) == bytes
   }
   
 }
-

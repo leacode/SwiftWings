@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SwiftWings'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.swift_versions   = '5.0'
   s.summary          = 'A collection of Swift extensions for all platforms'
   s.description      = <<-DESC

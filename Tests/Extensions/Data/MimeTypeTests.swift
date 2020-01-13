@@ -13,25 +13,25 @@ class MimeTypeTests: XCTestCase {
   
   func test_MimeType_init() {
     let path = "/leacode/index.html"
-    XCTAssertEqual(MimeType(pathOrFileName: path).rawValue, "text/html")
+    XCTAssertEqual(FileType(pathOrFileName: path).rawValue, "text/html")
     
     let fileName = "index.html"
-    XCTAssertEqual(MimeType(pathOrFileName: fileName).rawValue, "text/html")
+    XCTAssertEqual(FileType(pathOrFileName: fileName).rawValue, "text/html")
     
     let noExtensionFilePath = "leacode/index"
-    XCTAssertEqual(MimeType(pathOrFileName: noExtensionFilePath).rawValue, "unknown")
+    XCTAssertEqual(FileType(pathOrFileName: noExtensionFilePath).rawValue, "unknown")
     
     let noExtensionFileName = "index"
-    XCTAssertEqual(MimeType(pathOrFileName: noExtensionFileName).rawValue, "unknown")
+    XCTAssertEqual(FileType(pathOrFileName: noExtensionFileName).rawValue, "unknown")
   }
   
   func test_MimeType_ExpressibleByStringLiteral_init() {
     
-    let htmlMimeType = MimeType(stringLiteral: "text/html")
-    XCTAssertEqual(htmlMimeType, MimeType.html)
+    let htmlMimeType = FileType(stringLiteral: "text/html")
+    XCTAssertEqual(htmlMimeType, FileType.html)
     
-    let unknownType = MimeType(stringLiteral: "xxx")
-    XCTAssertEqual(unknownType, MimeType.unknown)
+    let unknownType = FileType(stringLiteral: "xxx")
+    XCTAssertEqual(unknownType, FileType.unknown)
     
   }
   
