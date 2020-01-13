@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6D21BEB623CC3F2F00526DAF"
-               BuildableName = "SwiftWings watchOS.framework"
+               BuildableName = "SwiftWings.framework"
                BlueprintName = "SwiftWings watchOS"
                ReferencedContainer = "container:SwiftWings.xcodeproj">
             </BuildableReference>
@@ -51,7 +51,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6D21BEB623CC3F2F00526DAF"
-            BuildableName = "SwiftWings watchOS.framework"
+            BuildableName = "SwiftWings.framework"
             BlueprintName = "SwiftWings watchOS"
             ReferencedContainer = "container:SwiftWings.xcodeproj">
          </BuildableReference>

@@ -11,5 +11,5 @@ let package = Package(name: "SwiftWings",
                       products: [.library(name: "SwiftWings",
                                           targets: ["SwiftWings"])],
                       targets: [.target(name: "SwiftWings",
-                                        path: "Source")],
+                                        path: "Sources")],
                       swiftLanguageVersions: [.v5])

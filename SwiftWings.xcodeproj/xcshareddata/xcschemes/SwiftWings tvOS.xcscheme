@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6D21BEC823CC3F6500526DAF"
-               BuildableName = "SwiftWings tvOS.framework"
+               BuildableName = "SwiftWings.framework"
                BlueprintName = "SwiftWings tvOS"
                ReferencedContainer = "container:SwiftWings.xcodeproj">
             </BuildableReference>
@@ -51,7 +51,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6D21BEC823CC3F6500526DAF"
-            BuildableName = "SwiftWings tvOS.framework"
+            BuildableName = "SwiftWings.framework"
             BlueprintName = "SwiftWings tvOS"
             ReferencedContainer = "container:SwiftWings.xcodeproj">
          </BuildableReference>
