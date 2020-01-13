@@ -1,6 +1,5 @@
 # SwiftWings
 A collection of Swift extensions for all platforms.
-leacode/SwiftWings
 
 [![Version](https://img.shields.io/cocoapods/v/SwiftWings.svg?style=flat)](https://cocoapods.org/pods/SwiftWings)
 [![License](https://img.shields.io/cocoapods/l/SwiftWings.svg?style=flat)](https://github.com/leacode/SwiftWings/blob/master/LICENSE)

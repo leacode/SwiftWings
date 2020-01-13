@@ -1,7 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'SwiftWings'
-  s.version          = '1.0.4'
-  s.swift_versions   = '5.0'
+  s.version          = '1.0.5'
   s.summary          = 'A collection of Swift extensions for all platforms'
   s.homepage         = 'https://github.com/leacode/SwiftWings'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
