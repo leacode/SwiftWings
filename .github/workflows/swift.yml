@@ -8,14 +8,14 @@ jobs:
     runs-on: macOS-latest
     strategy:
       matrix:
-        destination: ["OS:13.2.2,name=iPhone 11 Pro"]
+        destination: ["iOS:13.2.2,name=iPhone 11 Pro"]
         scheme: ['SwiftWings']
     steps:
       - name: Checkout
         uses: actions/checkout@master
       - name: Build and test
         run: |
-          xcodebuild clean test -project SwiftWings.xcodeproj -scheme SwiftWings -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ARCHS="armv7 armv7s" ONLY_ACTIVE_ARCH=NO
+          xcodebuild clean test -project SwiftWings.xcodeproj -scheme SwiftWings -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
         env:
           destination: ${{ matrix.destination }}
       - name: Upload Code Coverage
