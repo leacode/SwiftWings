@@ -6,8 +6,8 @@
 //  Copyright © 2020 Leacode. All rights reserved.
 //
 
-import XCTest
 @testable import SwiftWings
+import XCTest
 
 protocol TestProtocol {
   func invokeFunction() -> Bool
@@ -32,7 +32,6 @@ class TestClass3: TestProtocol {
 }
 
 class TestMirrorClass {
-  
   var class1 = TestClass1()
   var class2 = TestClass2()
   var class3 = TestClass3()
@@ -43,61 +42,50 @@ class TestMirrorClass {
       class3.invokeFunction()
   }
   
-  func invoke () throws {
+  func invoke() -> Bool {
     var reflected: Bool = false
-    Mirror.reflectProperties(of: self) { (obj: TestProtocol) in
+    Mirror.reflectProperties(of: self) { (_: TestProtocol) in
       reflected = true
     }
     
-    if reflected == false {
-      throw MachError(.failure)
-    }
-    
+    return reflected
   }
   
-  func invokeRecursively() throws {
+  func invokeRecursively() -> Bool {
     var reflected: Bool = false
     Mirror
       .reflectProperties(of: self,
-                         recursively: true)
-      { (obj: TestProtocol) in
-      reflected = true
+                         recursively: true) { (_: TestProtocol) in
+                          reflected = true
     }
     
-    if reflected == false {
-      throw MachError(.failure)
-    }
+    return reflected
   }
-  
 }
 
 class Mirror_ReflectionTests: XCTestCase {
-  
   var testMirrorClass: TestMirrorClass!
   
   override func setUp() {
     super.setUp()
     
     testMirrorClass = TestMirrorClass()
-
   }
   
   override func tearDown() {
-    
     testMirrorClass = nil
     
     super.tearDown()
   }
   
   func test_Mirror_reflectProperties() throws {
-    for _ in 0...1000 {
-      try testMirrorClass.invoke()
-      try testMirrorClass.invokeRecursively()
+    for _ in 0 ... 1000 {
+      XCTAssertTrue(testMirrorClass.invoke())
+      XCTAssertTrue(testMirrorClass.invokeRecursively())
     }
   }
   
   func test_InvokeDirectly() {
     XCTAssertEqual(testMirrorClass.invokeDirectly(), true)
   }
-  
 }
