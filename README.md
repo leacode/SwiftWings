@@ -101,7 +101,13 @@ dependencies: [
 <ul>
 <li><a href="https://github.com/leacode/SwiftWings/wiki/Array-Subscript"><code>Array+Subscript</code></a></li>
 
+<li><a href="https://github.com/leacode/SwiftWings/blob/master/Sources/Extensions/Foundation/Array/Array%2BData.swift"><code>Array+Data</code></a></li>
+
+<li><a href="https://github.com/leacode/SwiftWings/blob/master/Sources/Extensions/Foundation/Codable/Codable%2BJSON.swift"><code>Codable+JSON</code></a></li>
+
 <li><a href="https://github.com/leacode/SwiftWings/blob/master/Sources/Extensions/Foundation/Data/Data%2BExtensions.swift"><code>Data+Extensions</code></a></li>
+
+<li><a href="https://github.com/leacode/SwiftWings/blob/master/Sources/Extensions/Foundation/Data/Data%2BPrettyJSON.swift"><code>Data+PrettyJSON</code></a></li>
 
 <li><a href="https://github.com/leacode/SwiftWings/blob/master/Sources/Extensions/Foundation/Data/Data%2BMimeType.swift"><code>Data+MimeType</code></a></li>
 
