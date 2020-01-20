@@ -93,6 +93,36 @@ dependencies: [
 
 ```
 
+## List of Extensions
+
+<details>
+<ul>
+<li><a href="https://github.com/leacode/SwiftWings/blob/master/Sources/Extensions/Foundation/Array/Array%2BSubscript.swift"><code>Array+Subscript</code></a></li>
+
+<li><a href="https://github.com/leacode/SwiftWings/blob/master/Sources/Extensions/Foundation/Data/Data%2BExtensions.swift"><code>Data+Extensions</code></a></li>
+
+<li><a href="https://github.com/leacode/SwiftWings/blob/master/Sources/Extensions/Foundation/Data/Data%2BMimeType.swift"><code>Data+MimeType</code></a></li>
+
+<li><a href="https://github.com/leacode/SwiftWings/blob/master/Sources/Extensions/Foundation/Date/Date%2BExtensions.swift"><code>Date+Extensions</code></a></li>
+
+<li><a href="https://github.com/leacode/SwiftWings/blob/master/Sources/Extensions/Foundation/Int/Int%2BExtensions.swift"><code>Int+Extensions</code></a></li>
+
+<li><a href="https://github.com/leacode/SwiftWings/blob/master/Sources/Extensions/Foundation/Mirror/Mirror%2BReflection.swift"><code>Mirror+Reflection</code></a></li>
+
+<li><a href="https://github.com/leacode/SwiftWings/blob/master/Sources/Extensions/Foundation/NSObject/NSObject%2BName.swift"><code>NSObject+Name</code></a></li>
+
+<li><a href="https://github.com/leacode/SwiftWings/blob/master/Sources/Extensions/Foundation/Optional/Optional%2BTransform.swift"><code>Optional+Transform</code></a></li>
+
+<li><a href="https://github.com/leacode/SwiftWings/blob/master/Sources/Extensions/Foundation/String/String%2BMD5.swift"><code>String+MD5</code></a></li>
+
+<li><a href="https://github.com/leacode/SwiftWings/blob/master/Sources/Extensions/Foundation/String/String%2BModify.swift"><code>String+Modify</code></a></li>
+
+<li><a href="https://github.com/leacode/SwiftWings/blob/master/Sources/Extensions/Foundation/String/String%2BSubscript.swift"><code>String+Subscript</code></a></li>
+
+<li><a href="https://github.com/leacode/SwiftWings/blob/master/Sources/Extensions/Foundation/String/String%2BValidation.swift"><code>String+Validation</code></a></li>
+
+</ul>
+
 ## Author
 
 **Chunyu Li**
