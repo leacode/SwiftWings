@@ -141,4 +141,11 @@ class String_ModifyTests: XCTestCase {
     XCTAssertEqual("PIANO".plural, "PIANOS")
     XCTAssertEqual("HALO".plural, "HALOS")
   }
+  
+  func test_String_replacingCharacters_returnsExpected() {
+    let str = "12345"
+    let dict = ["1": "一", "3": "三", "5": "五", "8": "八"]
+    XCTAssertEqual(str.replacingCharacters(in: dict), "一2三4五")
+  }
+  
 }

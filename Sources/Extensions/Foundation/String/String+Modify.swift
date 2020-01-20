@@ -117,4 +117,10 @@ public extension String {
   var plural: String {
     return pluralize(2)
   }
+  
+  func replacingCharacters(in dictionary: [String: String]) -> String {
+      return map { (character: Character) -> String in
+          dictionary[String(character)] ?? String(character)
+      }.joined()
+  }
 }
