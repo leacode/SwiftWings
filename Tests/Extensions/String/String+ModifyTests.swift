@@ -140,8 +140,5 @@ class String_ModifyTests: XCTestCase {
     XCTAssertEqual("PHOTO".plural, "PHOTOS")
     XCTAssertEqual("PIANO".plural, "PIANOS")
     XCTAssertEqual("HALO".plural, "HALOS")
-    
-    
-    
   }
 }

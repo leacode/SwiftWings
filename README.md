@@ -7,7 +7,7 @@
 [![Codecov](https://codecov.io/gh/leacode/SwiftWings/branch/master/graph/badge.svg)](https://codecov.io/gh/leacode/SwiftWings)
 
 
-`SwiftWings` is A collection of Swift extensions. It support iOS, macOS, tvOS, watchOS. You can also integrate the framework in your server side project by using Swift Package Manager.
+`SwiftWings` is A collection of Swift extensions. It support iOS, macOS, tvOS, watchOS. You can also integrate the framework in your server-side project by using Swift Package Manager.
 
 ## Requirements
 
@@ -96,8 +96,10 @@ dependencies: [
 ## List of Extensions
 
 <details>
+<summary>Extensions</summary>
+</br>
 <ul>
-<li><a href="https://github.com/leacode/SwiftWings/blob/master/Sources/Extensions/Foundation/Array/Array%2BSubscript.swift"><code>Array+Subscript</code></a></li>
+<li><a href="https://github.com/leacode/SwiftWings/wiki/Array-Subscript"><code>Array+Subscript</code></a></li>
 
 <li><a href="https://github.com/leacode/SwiftWings/blob/master/Sources/Extensions/Foundation/Data/Data%2BExtensions.swift"><code>Data+Extensions</code></a></li>
 
@@ -122,6 +124,7 @@ dependencies: [
 <li><a href="https://github.com/leacode/SwiftWings/blob/master/Sources/Extensions/Foundation/String/String%2BValidation.swift"><code>String+Validation</code></a></li>
 
 </ul>
+</details>
 
 ## Author
 
@@ -133,5 +136,5 @@ dependencies: [
 
 ## License
 
-`SwiftWings` is available under the MIT license. See the `LICENSE` file for more info.
+`SwiftWings` is available under the MIT license. See the [LICENSE](https://github.com/leacode/SwiftWings/blob/master/LICENSE) file for more info.
 

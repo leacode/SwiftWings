@@ -16,12 +16,11 @@ class Array_SubscriptTests: XCTestCase {
     XCTAssertEqual(array[guard: 6] ?? 0, 0)
     XCTAssertEqual(array[guard: 1] ?? 0, 2)
   }
-
-    func test_Array_reduct_returnsExpected() {
-      XCTAssertEqual([1, 2, 3, 4].reduct(+), 10)
-      XCTAssertEqual([9, 3, 2, 1].reduct(-), 3)
-      XCTAssertEqual([1, 2, 3, 4].reduct(*), 24)
-      
-    }
-
+  
+  func test_Array_reduct_returnsExpected() {
+    XCTAssertEqual([1, 2, 3, 4].reduct(+), 10)
+    XCTAssertEqual([9, 3, 2, 1].reduct(-), 3)
+    XCTAssertEqual([1, 2, 3, 4].reduct(*), 24)
+  }
+  
 }

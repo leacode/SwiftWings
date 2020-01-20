@@ -10,9 +10,7 @@ import XCTest
 @testable import SwiftWings
 
 protocol TestProtocol {
-  
   func invokeFunction() -> Bool
-  
 }
 
 class TestClass1: TestProtocol {
@@ -38,6 +36,12 @@ class TestMirrorClass {
   var class1 = TestClass1()
   var class2 = TestClass2()
   var class3 = TestClass3()
+  
+  func invokeDirectly() -> Bool {
+    return class1.invokeFunction() &&
+      class2.invokeFunction() &&
+      class3.invokeFunction()
+  }
   
   func invoke () throws {
     var reflected: Bool = false
@@ -90,6 +94,10 @@ class Mirror_ReflectionTests: XCTestCase {
       try testMirrorClass.invoke()
       try testMirrorClass.invokeRecursively()
     }
+  }
+  
+  func test_InvokeDirectly() {
+    XCTAssertEqual(testMirrorClass.invokeDirectly(), true)
   }
   
 }
