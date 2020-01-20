@@ -9,6 +9,8 @@
 import Foundation
 
 public extension String {
+  
+  /// The md5 of a string
   var md5: String {
     // It's safe to force-unwrap here since it use .utf8 encoding, it's not save using Unicode encoding
     let message = data(using: .utf8)!.bytes

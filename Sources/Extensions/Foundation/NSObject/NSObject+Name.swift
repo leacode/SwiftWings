@@ -9,12 +9,12 @@
 import Foundation
 
 public extension NSObject {
-  /// return name of class
+  /// Name of class
   class var className: String {
     return "\(self)"
   }
   
-  /// return name of self's class
+  /// Name of self's class
   var className: String {
     return "\(Self.self)"
   }

@@ -8,9 +8,6 @@
 
 import Foundation
 
-
-
-
 public extension Data {
   
   // MARK: - Audio Types

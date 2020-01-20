@@ -1,9 +1,11 @@
 # SwiftWings
 
+![Swift5.0](https://img.shields.io/badge/swift-5.0-blue.svg)
 [![Version](https://img.shields.io/cocoapods/v/SwiftWings.svg?style=flat)](https://cocoapods.org/pods/SwiftWings)
 [![License](https://img.shields.io/cocoapods/l/SwiftWings.svg?style=flat)](https://github.com/leacode/SwiftWings/blob/master/LICENSE)
 [![Platform](https://img.shields.io/cocoapods/p/SwiftWings.svg?style=flat)](https://cocoapods.org/pods/SwiftWings)
 [![Codecov](https://codecov.io/gh/leacode/SwiftWings/branch/master/graph/badge.svg)](https://codecov.io/gh/leacode/SwiftWings)
+
 
 `SwiftWings` is A collection of Swift extensions. It support iOS, macOS, tvOS, watchOS. You can also integrate the framework in your server side project by using Swift Package Manager.
 
