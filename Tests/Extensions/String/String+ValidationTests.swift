@@ -50,12 +50,6 @@ class String_ValidationTests: XCTestCase {
     XCTAssertFalse("fdafdsaf".containsAddress)
   }
   
-  func test_containsEmoji_returnsExpected() {
-    XCTAssertTrue("11sss👽431fas".containsEmoji)
-    XCTAssertTrue("1👽☝🏽💪".containsEmoji)
-    XCTAssertFalse("12345678AFJDAISOFOADS".containsEmoji)
-  }
-  
   func test_strictContainsPhoneNumber_returnsExpected() {
     XCTAssertTrue("13477292020".strictContainsPhoneNumber)
     XCTAssertTrue("134-7729-2020".strictContainsPhoneNumber)

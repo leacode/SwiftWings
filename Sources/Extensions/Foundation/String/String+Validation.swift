@@ -24,25 +24,6 @@ public extension String {
     return contains(types: .address)
   }
   
-  /// A Boolean value indicating whether a string contains emoji.
-  ///
-  /// http://stackoverflow.com/questions/30757193/find-out-if-character-in-string-is-emoji
-  var containsEmoji: Bool {
-    for scalar in unicodeScalars {
-      switch scalar.value {
-      case 0x3030, 0x00AE, 0x00A9, // Special Characters
-      0x1D000 ... 0x1F77F, // Emoticons
-      0x2100 ... 0x27BF, // Misc symbols and Dingbats
-      0xFE00 ... 0xFE0F, // Variation Selectors
-      0x1F900 ... 0x1F9FF: // Supplemental Symbols and Pictographs
-        return true
-      default:
-        continue
-      }
-    }
-    return false
-  }
-  
   /// check if string contains certain Checking Type
   ///
   /// - Parameter types: NSTextCheckingResult.CheckingType

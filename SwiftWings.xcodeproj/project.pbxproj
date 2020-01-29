@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D0FD5D823D696F7009BC878 /* String+Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0FD5D723D696F7009BC878 /* String+Emoji.swift */; };
+		6D11861B23E0023100726870 /* String+EmojiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D11861A23E0023100726870 /* String+EmojiTests.swift */; };
 		6D21BE6823C57D4F00526DAF /* String+SubscriptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D21BE6723C57D4F00526DAF /* String+SubscriptTests.swift */; };
 		6D21BE6A23C57D5D00526DAF /* String+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D21BE6923C57D5D00526DAF /* String+Subscript.swift */; };
 		6D21BE7023C73E6B00526DAF /* pngFile.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D21BE6E23C73E1D00526DAF /* pngFile.png */; };
@@ -96,6 +98,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6D0FD5D723D696F7009BC878 /* String+Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Emoji.swift"; sourceTree = "<group>"; };
+		6D11861A23E0023100726870 /* String+EmojiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+EmojiTests.swift"; sourceTree = "<group>"; };
 		6D21BE6723C57D4F00526DAF /* String+SubscriptTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+SubscriptTests.swift"; sourceTree = "<group>"; };
 		6D21BE6923C57D5D00526DAF /* String+Subscript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Subscript.swift"; sourceTree = "<group>"; };
 		6D21BE6E23C73E1D00526DAF /* pngFile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pngFile.png; sourceTree = "<group>"; };
@@ -361,6 +365,7 @@
 		6D3684BE23BF8C3800492195 /* String */ = {
 			isa = PBXGroup;
 			children = (
+				6D0FD5D723D696F7009BC878 /* String+Emoji.swift */,
 				6D21BE6923C57D5D00526DAF /* String+Subscript.swift */,
 				6D79FFD023C3218B00C163FC /* String+Validation.swift */,
 				6DE8437D23C53C1A00CF59B9 /* String+MD5.swift */,
@@ -384,6 +389,7 @@
 				6D79FFD323C3247A00C163FC /* String+ValidationTests.swift */,
 				6DE8437F23C53C9B00CF59B9 /* String+MD5Tests.swift */,
 				6D42BC8C23CEFD5D00C204F9 /* String+ModifyTests.swift */,
+				6D11861A23E0023100726870 /* String+EmojiTests.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -738,6 +744,7 @@
 				6D79FFD223C3246400C163FC /* String+Validation.swift in Sources */,
 				6DE8437E23C53C1A00CF59B9 /* String+MD5.swift in Sources */,
 				6D26182823CD57A3004BE3B8 /* Date+Extensions.swift in Sources */,
+				6D0FD5D823D696F7009BC878 /* String+Emoji.swift in Sources */,
 				6D34CB8423D551F8005F1731 /* Data+PrettyJSON.swift in Sources */,
 				6DE8438623C55ED100CF59B9 /* Data+Extensions.swift in Sources */,
 				6D8AF58823CC71DD00A6D6FA /* Mirror+Reflection.swift in Sources */,
@@ -776,6 +783,7 @@
 				6DE8439423C56A7700CF59B9 /* Data+File.swift in Sources */,
 				6D21BE6823C57D4F00526DAF /* String+SubscriptTests.swift in Sources */,
 				6D8F2C3B23CD8B020047B422 /* Mirror+ReflectionTests.swift in Sources */,
+				6D11861B23E0023100726870 /* String+EmojiTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

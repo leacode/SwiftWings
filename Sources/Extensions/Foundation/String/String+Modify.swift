@@ -118,9 +118,29 @@ public extension String {
     return pluralize(2)
   }
   
+  ///
+  /// Returns a new string made by replacing values in dictionary
+  ///
+  /// e.g.
+  ///
+  /// let str = "12345"
+  ///
+  /// let dict = ["1": "一", "3": "三", "5": "五", "8": "八"]
+  ///
+  /// str.replacingCharacters(in: dict)  // 一2三4五
+  ///
   func replacingCharacters(in dictionary: [String: String]) -> String {
       return map { (character: Character) -> String in
           dictionary[String(character)] ?? String(character)
       }.joined()
   }
+  
+  func trimmingTrailingSpaces() -> String {
+      var t = self
+      while t.hasSuffix(" ") {
+          t = "" + t.dropLast()
+      }
+      return t
+  }
+  
 }

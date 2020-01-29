@@ -148,4 +148,13 @@ class String_ModifyTests: XCTestCase {
     XCTAssertEqual(str.replacingCharacters(in: dict), "一2三4五")
   }
   
+  func test_String_trimmingTrailingSpaces_returnsExpected() {
+    
+    XCTAssertEqual("abc   ".trimmingTrailingSpaces(), "abc")
+    XCTAssertEqual(" abc   ".trimmingTrailingSpaces(), " abc")
+    XCTAssertEqual("  abc   ".trimmingTrailingSpaces(), "  abc")
+    XCTAssertEqual("abc ".trimmingTrailingSpaces(), "abc")
+
+  }
+  
 }
