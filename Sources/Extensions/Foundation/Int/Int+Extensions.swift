@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension Int {
+public extension Int {
   
   /// Array of bytes with optional padding (little-endian)
   func bytes(_ totalBytes: Int = MemoryLayout<Int>.size) -> [UInt8] {
@@ -35,4 +35,15 @@ extension Int {
       return formatter.string(from: value)?.replacingOccurrences(of: "〇", with: "零")
   }
   
+  var half: Int? {
+    guard self < -1 || self > 1 else { return nil}
+    return self / 2
+  }
+  
+}
+
+public extension BinaryInteger {
+  var isEven: Bool {
+    return self%2 == 0
+  }
 }

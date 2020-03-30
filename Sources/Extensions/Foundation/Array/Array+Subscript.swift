@@ -8,10 +8,10 @@
 
 import Foundation
 
-extension Array {
+public extension Array {
   
   /// when a index is out of bound, the subscription returns nil
-  public subscript(guard idx: Int) -> Element? {
+  subscript(guard idx: Int) -> Element? {
     guard (startIndex..<endIndex).contains(idx) else {
       return nil
     }
@@ -24,7 +24,7 @@ extension Array {
   ///[1, 2, 3, 4].reduct(+) Optional(10)
   ///
   /// - Parameter nextPartialResult: hanle closure
-  public func reduct(_ nextPartialResult: (Element, Element)->Element) -> Element? {
+  func reduct(_ nextPartialResult: (Element, Element)->Element) -> Element? {
     return first.map {
       dropFirst().reduce($0, nextPartialResult)
     }

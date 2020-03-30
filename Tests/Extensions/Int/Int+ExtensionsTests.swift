@@ -44,4 +44,16 @@ class Int_ExtensionsTests: XCTestCase {
     
   }
   
+  func test_half_returnsExpected() {
+    XCTAssertEqual(4.half, 2)
+    XCTAssertEqual(5.half, 2)
+  }
+  
+  func test_isEven_returnsExpected() {
+    XCTAssertTrue(2.isEven)
+    XCTAssertTrue(4.isEven)
+    
+    XCTAssertFalse(5.isEven)
+  }
+  
 }

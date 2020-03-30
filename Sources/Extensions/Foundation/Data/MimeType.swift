@@ -233,14 +233,13 @@ public enum FileType: String {
   case unknown     = "unknown"
   
   public init(pathOrFileName: String) {
-    if let fileName = pathOrFileName.split(separator: ".").last {
-      let fileExtension = String(fileName)
-      if let fileMimeType = mimeTypes[fileExtension] {
+    if let fileExtension = pathOrFileName.fileExtension,
+      let fileMimeType = mimeTypes[fileExtension] {
         self = FileType(stringLiteral: fileMimeType.name)
         return
-      }
+    } else {
+      self = .unknown
     }
-    self = .unknown
   }
 }
 

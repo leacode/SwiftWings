@@ -23,4 +23,13 @@ class Optional_TransformTests: XCTestCase {
     
   }
   
+//  func test_failureText_works() {
+//    let s = "foo"
+//    
+//   
+//    
+//    let i = Int(s) !! "Expecting integer, got \"\(s)\""
+////    XCTAssertEqual(i, "Expecting integer, got \"foo\"")
+//  }
+  
 }

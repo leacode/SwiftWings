@@ -31,7 +31,6 @@
 		6D21BE9A23C83D8800526DAF /* opusFile.opus in Resources */ = {isa = PBXBuildFile; fileRef = 6D21BE9923C83D8800526DAF /* opusFile.opus */; };
 		6D21BE9C23C83DF900526DAF /* m4aFile.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6D21BE9B23C83DF900526DAF /* m4aFile.m4a */; };
 		6D21BE9E23C83FCD00526DAF /* midFile.mid in Resources */ = {isa = PBXBuildFile; fileRef = 6D21BE9D23C83FCD00526DAF /* midFile.mid */; };
-		6D21BEA223C84A9600526DAF /* MimeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D21BEA123C84A9600526DAF /* MimeType.swift */; };
 		6D21BEB823CC3F2F00526DAF /* SwiftWings.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D36849E23BF82A600492195 /* SwiftWings.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D21BEBA23CC3F2F00526DAF /* String+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D79FFD023C3218B00C163FC /* String+Validation.swift */; };
 		6D21BEBB23CC3F2F00526DAF /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE8437D23C53C1A00CF59B9 /* String+MD5.swift */; };
@@ -71,6 +70,43 @@
 		6D79FFD423C3247A00C163FC /* String+ValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D79FFD323C3247A00C163FC /* String+ValidationTests.swift */; };
 		6D8AF58823CC71DD00A6D6FA /* Mirror+Reflection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8AF58723CC71DD00A6D6FA /* Mirror+Reflection.swift */; };
 		6D8F2C3B23CD8B020047B422 /* Mirror+ReflectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8F2C3A23CD8B020047B422 /* Mirror+ReflectionTests.swift */; };
+		6DB380A2240A0DA800477692 /* Sequence+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB380A1240A0DA800477692 /* Sequence+Extensions.swift */; };
+		6DB380A5240A0E6900477692 /* Sequence+ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB380A4240A0E6900477692 /* Sequence+ExtensionsTests.swift */; };
+		6DB380A8240A10B000477692 /* Range+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB380A7240A10B000477692 /* Range+Extensions.swift */; };
+		6DB380A9240A10B000477692 /* Range+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB380A7240A10B000477692 /* Range+Extensions.swift */; };
+		6DB380AA240A10B000477692 /* Range+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB380A7240A10B000477692 /* Range+Extensions.swift */; };
+		6DB380AB240A10B600477692 /* Sequence+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB380A1240A0DA800477692 /* Sequence+Extensions.swift */; };
+		6DB380AC240A10B600477692 /* Sequence+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB380A1240A0DA800477692 /* Sequence+Extensions.swift */; };
+		6DB380AD240A10BA00477692 /* Codable+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D34CB8623D55237005F1731 /* Codable+JSON.swift */; };
+		6DB380AE240A10BB00477692 /* Codable+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D34CB8623D55237005F1731 /* Codable+JSON.swift */; };
+		6DB380AF240A10BF00477692 /* Array+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1507423D44A6000AE8DD7 /* Array+Subscript.swift */; };
+		6DB380B0240A10BF00477692 /* Array+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D34CB8123D551BE005F1731 /* Array+Data.swift */; };
+		6DB380B1240A10BF00477692 /* Array+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1507423D44A6000AE8DD7 /* Array+Subscript.swift */; };
+		6DB380B2240A10BF00477692 /* Array+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D34CB8123D551BE005F1731 /* Array+Data.swift */; };
+		6DB380B6240A10C700477692 /* MimeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D21BEA123C84A9600526DAF /* MimeType.swift */; };
+		6DB380B7240A10C700477692 /* Data+PrettyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D34CB8323D551F8005F1731 /* Data+PrettyJSON.swift */; };
+		6DB380B8240A10C700477692 /* MimeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D21BEA123C84A9600526DAF /* MimeType.swift */; };
+		6DB380B9240A10C700477692 /* Data+PrettyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D34CB8323D551F8005F1731 /* Data+PrettyJSON.swift */; };
+		6DB380BA240A10C800477692 /* MimeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D21BEA123C84A9600526DAF /* MimeType.swift */; };
+		6DB380BB240A10D000477692 /* Mirror+Reflection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8AF58723CC71DD00A6D6FA /* Mirror+Reflection.swift */; };
+		6DB380BC240A10D100477692 /* Mirror+Reflection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8AF58723CC71DD00A6D6FA /* Mirror+Reflection.swift */; };
+		6DB380BD240A10D600477692 /* Optional+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1507923D44C8700AE8DD7 /* Optional+Transform.swift */; };
+		6DB380BE240A10D600477692 /* Optional+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1507923D44C8700AE8DD7 /* Optional+Transform.swift */; };
+		6DB380BF240A10DB00477692 /* String+Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0FD5D723D696F7009BC878 /* String+Emoji.swift */; };
+		6DB380C0240A10DB00477692 /* String+Modify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D42BC8A23CEF8FF00C204F9 /* String+Modify.swift */; };
+		6DB380C1240A10DB00477692 /* String+Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0FD5D723D696F7009BC878 /* String+Emoji.swift */; };
+		6DB380C2240A10DB00477692 /* String+Modify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D42BC8A23CEF8FF00C204F9 /* String+Modify.swift */; };
+		6DB380C4240A175A00477692 /* String+File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB380C3240A175A00477692 /* String+File.swift */; };
+		6DB380C5240A175A00477692 /* String+File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB380C3240A175A00477692 /* String+File.swift */; };
+		6DB380C6240A175A00477692 /* String+File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB380C3240A175A00477692 /* String+File.swift */; };
+		6DBD6AB22431C52000ADF258 /* Double+ChineseCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBD6AB12431C52000ADF258 /* Double+ChineseCurrency.swift */; };
+		6DBD6AB52431C61B00ADF258 /* Double_ChineseMoneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBD6AB32431C5DC00ADF258 /* Double_ChineseMoneyTests.swift */; };
+		6DBD6AB72431DE2C00ADF258 /* Int+ChineseCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBD6AB62431DE2C00ADF258 /* Int+ChineseCurrency.swift */; };
+		6DBD6AB92431DE6100ADF258 /* Int+ChineseCurrencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBD6AB82431DE6100ADF258 /* Int+ChineseCurrencyTests.swift */; };
+		6DBD6ABA2431F38600ADF258 /* Int+ChineseCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBD6AB62431DE2C00ADF258 /* Int+ChineseCurrency.swift */; };
+		6DBD6ABB2431F38600ADF258 /* Int+ChineseCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBD6AB62431DE2C00ADF258 /* Int+ChineseCurrency.swift */; };
+		6DBD6ABC2431F38900ADF258 /* Double+ChineseCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBD6AB12431C52000ADF258 /* Double+ChineseCurrency.swift */; };
+		6DBD6ABD2431F38A00ADF258 /* Double+ChineseCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBD6AB12431C52000ADF258 /* Double+ChineseCurrency.swift */; };
 		6DD1507523D44A6000AE8DD7 /* Array+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1507423D44A6000AE8DD7 /* Array+Subscript.swift */; };
 		6DD1507A23D44C8700AE8DD7 /* Optional+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1507923D44C8700AE8DD7 /* Optional+Transform.swift */; };
 		6DE8437E23C53C1A00CF59B9 /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE8437D23C53C1A00CF59B9 /* String+MD5.swift */; };
@@ -149,6 +185,14 @@
 		6D79FFD323C3247A00C163FC /* String+ValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ValidationTests.swift"; sourceTree = "<group>"; };
 		6D8AF58723CC71DD00A6D6FA /* Mirror+Reflection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mirror+Reflection.swift"; sourceTree = "<group>"; };
 		6D8F2C3A23CD8B020047B422 /* Mirror+ReflectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mirror+ReflectionTests.swift"; sourceTree = "<group>"; };
+		6DB380A1240A0DA800477692 /* Sequence+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Extensions.swift"; sourceTree = "<group>"; };
+		6DB380A4240A0E6900477692 /* Sequence+ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+ExtensionsTests.swift"; sourceTree = "<group>"; };
+		6DB380A7240A10B000477692 /* Range+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Range+Extensions.swift"; sourceTree = "<group>"; };
+		6DB380C3240A175A00477692 /* String+File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+File.swift"; sourceTree = "<group>"; };
+		6DBD6AB12431C52000ADF258 /* Double+ChineseCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+ChineseCurrency.swift"; sourceTree = "<group>"; };
+		6DBD6AB32431C5DC00ADF258 /* Double_ChineseMoneyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double_ChineseMoneyTests.swift; sourceTree = "<group>"; };
+		6DBD6AB62431DE2C00ADF258 /* Int+ChineseCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+ChineseCurrency.swift"; sourceTree = "<group>"; };
+		6DBD6AB82431DE6100ADF258 /* Int+ChineseCurrencyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+ChineseCurrencyTests.swift"; sourceTree = "<group>"; };
 		6DD1507423D44A6000AE8DD7 /* Array+Subscript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Subscript.swift"; sourceTree = "<group>"; };
 		6DD1507923D44C8700AE8DD7 /* Optional+Transform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Transform.swift"; sourceTree = "<group>"; };
 		6DE8437D23C53C1A00CF59B9 /* String+MD5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+MD5.swift"; sourceTree = "<group>"; };
@@ -242,6 +286,7 @@
 		6D34CB8823D55281005F1731 /* Double */ = {
 			isa = PBXGroup;
 			children = (
+				6DBD6AB12431C52000ADF258 /* Double+ChineseCurrency.swift */,
 			);
 			path = Double;
 			sourceTree = "<group>";
@@ -265,6 +310,7 @@
 		6D34CB9523D55E3C005F1731 /* Double */ = {
 			isa = PBXGroup;
 			children = (
+				6DBD6AB32431C5DC00ADF258 /* Double_ChineseMoneyTests.swift */,
 			);
 			path = Double;
 			sourceTree = "<group>";
@@ -312,6 +358,8 @@
 		6D3684A823BF831800492195 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				6DB380A6240A106400477692 /* Range */,
+				6DB380A0240A0D9200477692 /* Sequence */,
 				6D34CB8523D5522C005F1731 /* Codable */,
 				6DD1507323D44A5200AE8DD7 /* Array */,
 				6DE8438423C55EC800CF59B9 /* Data */,
@@ -340,6 +388,7 @@
 		6D3684BA23BF847D00492195 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				6DB380A3240A0E3F00477692 /* Sequence */,
 				6D34CB9523D55E3C005F1731 /* Double */,
 				6D34CB8B23D5545B005F1731 /* Codable */,
 				6D34CB7B23D5340A005F1731 /* Array */,
@@ -370,6 +419,7 @@
 				6D79FFD023C3218B00C163FC /* String+Validation.swift */,
 				6DE8437D23C53C1A00CF59B9 /* String+MD5.swift */,
 				6D42BC8A23CEF8FF00C204F9 /* String+Modify.swift */,
+				6DB380C3240A175A00477692 /* String+File.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -410,6 +460,30 @@
 			path = Mirror;
 			sourceTree = "<group>";
 		};
+		6DB380A0240A0D9200477692 /* Sequence */ = {
+			isa = PBXGroup;
+			children = (
+				6DB380A1240A0DA800477692 /* Sequence+Extensions.swift */,
+			);
+			path = Sequence;
+			sourceTree = "<group>";
+		};
+		6DB380A3240A0E3F00477692 /* Sequence */ = {
+			isa = PBXGroup;
+			children = (
+				6DB380A4240A0E6900477692 /* Sequence+ExtensionsTests.swift */,
+			);
+			path = Sequence;
+			sourceTree = "<group>";
+		};
+		6DB380A6240A106400477692 /* Range */ = {
+			isa = PBXGroup;
+			children = (
+				6DB380A7240A10B000477692 /* Range+Extensions.swift */,
+			);
+			path = Range;
+			sourceTree = "<group>";
+		};
 		6DD1507323D44A5200AE8DD7 /* Array */ = {
 			isa = PBXGroup;
 			children = (
@@ -431,6 +505,7 @@
 			isa = PBXGroup;
 			children = (
 				6DE8438223C55EAA00CF59B9 /* Int+Extensions.swift */,
+				6DBD6AB62431DE2C00ADF258 /* Int+ChineseCurrency.swift */,
 			);
 			path = Int;
 			sourceTree = "<group>";
@@ -507,6 +582,7 @@
 			isa = PBXGroup;
 			children = (
 				6DE8439623C56C6F00CF59B9 /* Int+ExtensionsTests.swift */,
+				6DBD6AB82431DE6100ADF258 /* Int+ChineseCurrencyTests.swift */,
 			);
 			path = Int;
 			sourceTree = "<group>";
@@ -711,14 +787,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DB380BD240A10D600477692 /* Optional+Transform.swift in Sources */,
+				6DBD6ABA2431F38600ADF258 /* Int+ChineseCurrency.swift in Sources */,
+				6DB380B9240A10C700477692 /* Data+PrettyJSON.swift in Sources */,
 				6D21BEBA23CC3F2F00526DAF /* String+Validation.swift in Sources */,
+				6DB380C1240A10DB00477692 /* String+Emoji.swift in Sources */,
+				6DB380B8240A10C700477692 /* MimeType.swift in Sources */,
+				6DB380BB240A10D000477692 /* Mirror+Reflection.swift in Sources */,
 				6D26182923CD57A3004BE3B8 /* Date+Extensions.swift in Sources */,
+				6DB380AB240A10B600477692 /* Sequence+Extensions.swift in Sources */,
 				6D21BEBB23CC3F2F00526DAF /* String+MD5.swift in Sources */,
+				6DB380AD240A10BA00477692 /* Codable+JSON.swift in Sources */,
+				6DB380C2240A10DB00477692 /* String+Modify.swift in Sources */,
+				6DB380AF240A10BF00477692 /* Array+Subscript.swift in Sources */,
 				6D21BEBC23CC3F2F00526DAF /* Data+Extensions.swift in Sources */,
 				6D21BEBD23CC3F2F00526DAF /* NSObject+Name.swift in Sources */,
+				6DB380C5240A175A00477692 /* String+File.swift in Sources */,
 				6D21BEBE23CC3F2F00526DAF /* Data+MimeType.swift in Sources */,
 				6D21BEBF23CC3F2F00526DAF /* String+Subscript.swift in Sources */,
+				6DB380B0240A10BF00477692 /* Array+Data.swift in Sources */,
 				6D21BEC023CC3F2F00526DAF /* Int+Extensions.swift in Sources */,
+				6DB380A9240A10B000477692 /* Range+Extensions.swift in Sources */,
+				6DBD6ABC2431F38900ADF258 /* Double+ChineseCurrency.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -726,14 +816,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DB380BE240A10D600477692 /* Optional+Transform.swift in Sources */,
+				6DBD6ABB2431F38600ADF258 /* Int+ChineseCurrency.swift in Sources */,
+				6DB380B7240A10C700477692 /* Data+PrettyJSON.swift in Sources */,
 				6D21BECC23CC3F6500526DAF /* String+Validation.swift in Sources */,
+				6DB380BF240A10DB00477692 /* String+Emoji.swift in Sources */,
+				6DB380B6240A10C700477692 /* MimeType.swift in Sources */,
+				6DB380BC240A10D100477692 /* Mirror+Reflection.swift in Sources */,
 				6D26182A23CD57A3004BE3B8 /* Date+Extensions.swift in Sources */,
+				6DB380AC240A10B600477692 /* Sequence+Extensions.swift in Sources */,
 				6D21BECD23CC3F6500526DAF /* String+MD5.swift in Sources */,
+				6DB380AE240A10BB00477692 /* Codable+JSON.swift in Sources */,
+				6DB380C0240A10DB00477692 /* String+Modify.swift in Sources */,
+				6DB380B1240A10BF00477692 /* Array+Subscript.swift in Sources */,
 				6D21BECE23CC3F6500526DAF /* Data+Extensions.swift in Sources */,
 				6D21BECF23CC3F6500526DAF /* NSObject+Name.swift in Sources */,
+				6DB380C6240A175A00477692 /* String+File.swift in Sources */,
 				6D21BED023CC3F6500526DAF /* Data+MimeType.swift in Sources */,
 				6D21BED123CC3F6500526DAF /* String+Subscript.swift in Sources */,
+				6DB380B2240A10BF00477692 /* Array+Data.swift in Sources */,
 				6D21BED223CC3F6500526DAF /* Int+Extensions.swift in Sources */,
+				6DB380AA240A10B000477692 /* Range+Extensions.swift in Sources */,
+				6DBD6ABD2431F38A00ADF258 /* Double+ChineseCurrency.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -749,14 +853,20 @@
 				6DE8438623C55ED100CF59B9 /* Data+Extensions.swift in Sources */,
 				6D8AF58823CC71DD00A6D6FA /* Mirror+Reflection.swift in Sources */,
 				6D34CB8723D55237005F1731 /* Codable+JSON.swift in Sources */,
+				6DB380A2240A0DA800477692 /* Sequence+Extensions.swift in Sources */,
+				6DBD6AB22431C52000ADF258 /* Double+ChineseCurrency.swift in Sources */,
 				6DD1507523D44A6000AE8DD7 /* Array+Subscript.swift in Sources */,
 				6D3684AA23BF834B00492195 /* NSObject+Name.swift in Sources */,
+				6DB380BA240A10C800477692 /* MimeType.swift in Sources */,
 				6DD1507A23D44C8700AE8DD7 /* Optional+Transform.swift in Sources */,
 				6D42BC8B23CEF8FF00C204F9 /* String+Modify.swift in Sources */,
+				6DB380C4240A175A00477692 /* String+File.swift in Sources */,
 				6DE8438823C5603200CF59B9 /* Data+MimeType.swift in Sources */,
 				6D34CB8223D551BE005F1731 /* Array+Data.swift in Sources */,
+				6DBD6AB72431DE2C00ADF258 /* Int+ChineseCurrency.swift in Sources */,
 				6D21BE6A23C57D5D00526DAF /* String+Subscript.swift in Sources */,
 				6DE8438323C55EAA00CF59B9 /* Int+Extensions.swift in Sources */,
+				6DB380A8240A10B000477692 /* Range+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -773,16 +883,18 @@
 				6D34CB8D23D5546F005F1731 /* Codable+JSONTests.swift in Sources */,
 				6D26182D23CD57ED004BE3B8 /* Date+ExtensionsTests.swift in Sources */,
 				6DE8439923C56EC800CF59B9 /* AudioMimeTypeTests.swift in Sources */,
-				6D21BEA223C84A9600526DAF /* MimeType.swift in Sources */,
+				6DB380A5240A0E6900477692 /* Sequence+ExtensionsTests.swift in Sources */,
 				6D34CB8023D537D4005F1731 /* Optional+TransformTests.swift in Sources */,
 				6D79FFD423C3247A00C163FC /* String+ValidationTests.swift in Sources */,
 				6D34CB9423D55E26005F1731 /* Data+PrettyJSONTests.swift in Sources */,
 				6D3684BC23BF849900492195 /* NSObject+NameTests.swift in Sources */,
 				6DE8438023C53C9B00CF59B9 /* String+MD5Tests.swift in Sources */,
 				6DE8439B23C56ED200CF59B9 /* MimeTypeTests.swift in Sources */,
+				6DBD6AB52431C61B00ADF258 /* Double_ChineseMoneyTests.swift in Sources */,
 				6DE8439423C56A7700CF59B9 /* Data+File.swift in Sources */,
 				6D21BE6823C57D4F00526DAF /* String+SubscriptTests.swift in Sources */,
 				6D8F2C3B23CD8B020047B422 /* Mirror+ReflectionTests.swift in Sources */,
+				6DBD6AB92431DE6100ADF258 /* Int+ChineseCurrencyTests.swift in Sources */,
 				6D11861B23E0023100726870 /* String+EmojiTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
