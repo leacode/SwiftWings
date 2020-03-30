@@ -8,7 +8,7 @@ jobs:
     runs-on: macOS-latest
     strategy:
       matrix:
-        destination: ["OS=13.3,name=iPhone 11 Pro"]
+        destination: ['platform=iOS Simulator,OS=13.3,name=iPhone 11 Pro','platform=tvOS Simulator,OS=13.3,name=Apple TV 4K']
         scheme: ['SwiftWings']
     steps:
       - name: Checkout
