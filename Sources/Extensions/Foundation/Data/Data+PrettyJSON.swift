@@ -9,7 +9,6 @@
 import Foundation
 
 public extension Data {
-  
   /// pring json data pretty
   ///
   /// If you use String instead with NSString,
@@ -25,5 +24,19 @@ public extension Data {
       let prettyPrintedString = String(data: data, encoding: .utf8) else { return nil }
     return prettyPrintedString as NSString
   }
+}
+
+public extension Data {
+  init?(json: Any) {
+    guard let data = try? JSONSerialization.data(withJSONObject: json, options: .fragmentsAllowed) else { return nil }
+    self.init(data)
+  }
   
+  func jsonToDictionary() -> [String: Any]? {
+    (try? JSONSerialization.jsonObject(with: self, options: .allowFragments)) as? [String: Any]
+  }
+  
+  func jsonToArray() -> [Any]? {
+    (try? JSONSerialization.jsonObject(with: self, options: .allowFragments)) as? [Any]
+  }
 }

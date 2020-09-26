@@ -25,7 +25,7 @@ class String_ValidationTests: XCTestCase {
     XCTAssertTrue("电话+86134-7729-2020这个".containsPhoneNumber)
     XCTAssertTrue("我的号码是+86134-7729-2020".containsPhoneNumber)
     XCTAssertTrue("电话+86134-7729-2020这个".containsPhoneNumber)
-
+    
     XCTAssertTrue("+86 13477292020".containsPhoneNumber)
     XCTAssertTrue("+86 134-7729-2020".containsPhoneNumber)
     XCTAssertTrue("我的号码是+86 134-7729-2020".containsPhoneNumber)
@@ -103,14 +103,14 @@ class String_ValidationTests: XCTestCase {
     XCTAssertTrue("2345676".isValidPhoneNumber)
     XCTAssertTrue("1234543".isValidPhoneNumber)
     XCTAssertTrue("1199999".isValidPhoneNumber)
-
+    
     XCTAssertFalse("119999".isValidPhoneNumber)
     XCTAssertFalse("11999".isValidPhoneNumber)
     XCTAssertFalse("1199".isValidPhoneNumber)
     XCTAssertFalse("119".isValidPhoneNumber)
     XCTAssertFalse("11".isValidPhoneNumber)
     XCTAssertFalse("1".isValidPhoneNumber)
-
+    
     XCTAssertFalse("123".isValidPhoneNumber)
     XCTAssertFalse("123".isValidPhoneNumber)
     XCTAssertFalse("fasdfa".isValidPhoneNumber)
@@ -155,7 +155,7 @@ class String_ValidationTests: XCTestCase {
   
   func test_isValidJSON_returnsExpected() {
     XCTAssertTrue(#"{"name":"John"}"#.isValidJSON)
-        
+    
     XCTAssertFalse(#"{name:"John"}"#.isValidJSON)
   }
   
@@ -170,7 +170,7 @@ class String_ValidationTests: XCTestCase {
     XCTAssertTrue("450311197509088609".isValidChineseIDCardNo)
     XCTAssertTrue("511823198401101618".isValidChineseIDCardNo)
     XCTAssertTrue("45031119750908814X".isValidChineseIDCardNo)
-
+    
     XCTAssertFalse("".isValidChineseIDCardNo)
     XCTAssertFalse("45031119759988814X".isValidChineseIDCardNo)
     XCTAssertFalse("511823198401101".isValidChineseIDCardNo)
@@ -248,9 +248,37 @@ class String_ValidationTests: XCTestCase {
     XCTAssertFalse("371040610573651".isValidBankCardNumber)
     XCTAssertFalse("341557151650399".isValidBankCardNumber)
     XCTAssertFalse("371673901387168".isValidBankCardNumber)
-    
-
   }
- 
+  
+  func test_westernArabicNumeralsOnly_returnsExpected() {
+    XCTAssertEqual("12jjsd32m2mk".westernArabicNumeralsOnly, "12322")
+    XCTAssertEqual("asdfafaf".westernArabicNumeralsOnly, "")
+  }
+  
+  func test_containsOnlyDigits_returnsExpected() {
+    XCTAssertTrue("12312312".containsOnlyDigits)
+    XCTAssertFalse("31231fds12".containsOnlyDigits)
+    XCTAssertFalse("^&213213".containsOnlyDigits)
+  }
+  
+  func test_containsOnlyLetters_returnsExpected() {
+    XCTAssertTrue("afadsfafadf".containsOnlyLetters)
+    XCTAssertTrue("afsAADFAvsffafaf".containsOnlyLetters)
+    XCTAssertFalse("12kl23lkl32lkl".containsOnlyLetters)
+    XCTAssertFalse("&*(iojoasf".containsOnlyLetters)
+  }
+  
+  func test_isAlphanumeric_returnsExpected() {
+    XCTAssertTrue("12312312".isAlphanumeric)
+    XCTAssertTrue("31231fds12".isAlphanumeric)
+    XCTAssertTrue("31231ADFADSFAfds12".isAlphanumeric)
+    XCTAssertFalse("^&213213".isAlphanumeric)
+  }
+  
+  func test_condensedWhitespace_returnsExpected() {
+    XCTAssertEqual("Hello  World.\nHello!".condensedWhitespace, "Hello World. Hello!")
+    XCTAssertEqual(" 3432 fadf afdf ".condensedWhitespace, "3432 fadf afdf")
+  }
+  
 }
 

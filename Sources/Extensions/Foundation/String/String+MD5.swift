@@ -24,6 +24,7 @@ public extension String {
     }
     return MD5String as String
   }
+  
 }
 
 protocol HashProtocol {
@@ -158,7 +159,7 @@ class MD5: HashProtocol {
     for chunk in BytesSequence(chunkSize: chunkSizeBytes, data: tmpMessage) {
       // break chunk into sixteen 32-bit words M[j], 0 ≤ j ≤ 15
       let M = toUInt32Array(chunk)
-
+      
       // Initialize hash value for this chunk:
       var A: UInt32 = hh[0]
       var B: UInt32 = hh[1]

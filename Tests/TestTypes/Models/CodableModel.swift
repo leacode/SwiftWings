@@ -14,3 +14,5 @@ struct CodableModel: Codable {
   let date: Date
   let price: Double
 }
+
+class SomeClass { }

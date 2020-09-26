@@ -71,7 +71,7 @@ class String_ModifyTests: XCTestCase {
     XCTAssertEqual("a".plural, "a")
     XCTAssertEqual("A".plural, "A")
     XCTAssertEqual("".plural, "")
-
+    
     
     XCTAssertEqual("cat".plural, "cats")
     XCTAssertEqual("house".plural, "houses")
@@ -154,7 +154,27 @@ class String_ModifyTests: XCTestCase {
     XCTAssertEqual(" abc   ".trimmingTrailingSpaces(), " abc")
     XCTAssertEqual("  abc   ".trimmingTrailingSpaces(), "  abc")
     XCTAssertEqual("abc ".trimmingTrailingSpaces(), "abc")
-
+    
+  }
+  
+  func test_String_capitalizingFirstLetter_returnsExpected() {
+    XCTAssertEqual("hello world".capitalizingFirstLetter(), "Hello world")
+  }
+  
+  func test_String_capitalizeFirstLetter_returnsExpected() {
+    var str = "hello world"
+    str.capitalizeFirstLetter()
+    XCTAssertEqual(str, "Hello world")
+  }
+  
+  func test_String_trimmed_returnsExpected() {
+    XCTAssertEqual(" Hello world! ".trimmed, "Hello world!")
+  }
+  
+  func test_String_trim_returnsExpected() {
+    var str = " Hello world! "
+    str.trim()
+    XCTAssertEqual(str, "Hello world!")
   }
   
 }

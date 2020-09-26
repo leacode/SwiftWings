@@ -17,22 +17,22 @@ public extension Int {
   
   /// Spell Int Value in Simplified Chinese
   var simplifiedChinese: String? {
-      let value = NSNumber(integerLiteral: self)
-      let userLocale = Locale(identifier: "zh_Hans_CN")
-      let formatter = NumberFormatter()
-      formatter.numberStyle = .spellOut
-      formatter.locale = userLocale
-      return formatter.string(from: value)?.replacingOccurrences(of: "〇", with: "零")
+    let value = NSNumber(integerLiteral: self)
+    let userLocale = Locale(identifier: "zh_Hans_CN")
+    let formatter = NumberFormatter()
+    formatter.numberStyle = .spellOut
+    formatter.locale = userLocale
+    return formatter.string(from: value)?.replacingOccurrences(of: "〇", with: "零")
   }
   
   /// Spell Int Value in Traditional Chinese
   var traditionalChinese: String? {
-      let value = NSNumber(integerLiteral: self)
-      let userLocale = Locale(identifier: "zh_Hant")
-      let formatter = NumberFormatter()
-      formatter.numberStyle = .spellOut
-      formatter.locale = userLocale
-      return formatter.string(from: value)?.replacingOccurrences(of: "〇", with: "零")
+    let value = NSNumber(integerLiteral: self)
+    let userLocale = Locale(identifier: "zh_Hant")
+    let formatter = NumberFormatter()
+    formatter.numberStyle = .spellOut
+    formatter.locale = userLocale
+    return formatter.string(from: value)?.replacingOccurrences(of: "〇", with: "零")
   }
   
   var half: Int? {
@@ -45,5 +45,13 @@ public extension Int {
 public extension BinaryInteger {
   var isEven: Bool {
     return self%2 == 0
+  }
+  
+  func toDouble() -> Double {
+    Double(self)
+  }
+  
+  func toString() -> String {
+    "\(self)"
   }
 }

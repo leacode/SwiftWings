@@ -9,7 +9,6 @@
 import Foundation
 
 public extension Sequence where Element: Hashable {
-
   /// returns all unique elements in a Sequence while still maintaining the original order
   func unique() -> [Element] {
     var seen: Set<Element> = []
@@ -18,5 +17,4 @@ public extension Sequence where Element: Hashable {
       seen.insert($0).inserted
     }
   }
-  
 }

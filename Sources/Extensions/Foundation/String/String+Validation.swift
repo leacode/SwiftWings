@@ -59,7 +59,7 @@ public extension String {
   /// A Boolean value indicating whether a string is valid JSON String.
   var isValidJSON: Bool {
     if let jsonDataToVerify = self.data(using: String.Encoding.utf8),
-      let _ = try? JSONSerialization.jsonObject(with: jsonDataToVerify) {
+       let _ = try? JSONSerialization.jsonObject(with: jsonDataToVerify) {
       return true
     }
     return false
@@ -84,7 +84,7 @@ public extension String {
   var isFloat: Bool {
     return Float(self) != nil
   }
-
+  
   /// A Boolean value indicating whether a string is valid Chinese ID card number String.
   var isValidChineseIDCardNo: Bool {
     // 判断是否为空
@@ -132,7 +132,7 @@ public extension String {
   var isValidBankCardNumber: Bool {
     return self.luhnCheck()
   }
-    
+  
   /// Luhn Algorithm in Swift.
   func luhnCheck() -> Bool {
     var sum = 0
@@ -171,6 +171,28 @@ public extension String {
   var westernArabicNumeralsOnly: String {
     let pattern = UnicodeScalar("0") ... "9"
     return String(unicodeScalars
-      .compactMap { pattern ~= $0 ? Character($0) : nil })
+                    .compactMap { pattern ~= $0 ? Character($0) : nil })
+  }
+  
+  var containsOnlyDigits: Bool {
+    let notDigits = NSCharacterSet.decimalDigits.inverted
+    return rangeOfCharacter(from: notDigits, options: String.CompareOptions.literal, range: nil) == nil
+  }
+  
+  var containsOnlyLetters: Bool {
+    let notLetters = NSCharacterSet.letters.inverted
+    return rangeOfCharacter(from: notLetters, options: String.CompareOptions.literal, range: nil) == nil
+  }
+  
+  var isAlphanumeric: Bool {
+    !isEmpty && range(of: "[^a-zA-Z0-9]", options: .regularExpression) == nil
+  }
+  
+}
+
+extension String {
+  var condensedWhitespace: String {
+    let components = self.components(separatedBy: .whitespacesAndNewlines)
+    return components.filter { !$0.isEmpty }.joined(separator: " ")
   }
 }

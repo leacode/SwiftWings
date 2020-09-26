@@ -56,4 +56,15 @@ class Int_ExtensionsTests: XCTestCase {
     XCTAssertFalse(5.isEven)
   }
   
+  func test_toDouble_returnsExpected() {
+    XCTAssertEqual(1.toDouble(), Double(1))
+    XCTAssertEqual(133232.toDouble(), Double(133232))
+    XCTAssertEqual(-21211.toDouble(), Double(-21211))
+    XCTAssertEqual(0.toDouble(), Double(0))
+  }
+  
+  func test_toString_returnsExpected() {
+    XCTAssertEqual(123.toString(), "123")
+  }
+  
 }

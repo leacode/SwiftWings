@@ -32,7 +32,7 @@ public extension String {
       "halo": "halos",
     ]
   }
-    
+  
   /// return normal form or plural form of a noun
   /// - Parameter count: count of object
   func pluralize(_ count: Int, countable: Bool = true) -> String {
@@ -88,9 +88,9 @@ public extension String {
       prefix = self[0 ..< self.count]
       suffix = "es"
     } else if matches(pattern: shRegex) ||
-      matches(pattern: ssRegex) ||
-      matches(pattern: chRegex) ||
-      matches(pattern: tzRegex) {
+                matches(pattern: ssRegex) ||
+                matches(pattern: chRegex) ||
+                matches(pattern: tzRegex) {
       prefix = self[0 ..< self.count]
       suffix = "es"
     } else if matches(pattern: yRegex) {
@@ -130,17 +130,37 @@ public extension String {
   /// str.replacingCharacters(in: dict)  // 一2三4五
   ///
   func replacingCharacters(in dictionary: [String: String]) -> String {
-      return map { (character: Character) -> String in
-          dictionary[String(character)] ?? String(character)
-      }.joined()
+    return map { (character: Character) -> String in
+      dictionary[String(character)] ?? String(character)
+    }.joined()
   }
   
   func trimmingTrailingSpaces() -> String {
-      var t = self
-      while t.hasSuffix(" ") {
-          t = "" + t.dropLast()
-      }
-      return t
+    var t = self
+    while t.hasSuffix(" ") {
+      t = "" + t.dropLast()
+    }
+    return t
   }
   
+}
+
+public extension String {
+  func capitalizingFirstLetter() -> String {
+    return prefix(1).uppercased() + dropFirst()
+  }
+  
+  mutating func capitalizeFirstLetter() {
+    self = self.capitalizingFirstLetter()
+  }
+}
+
+public extension String {
+  var trimmed: String {
+    self.trimmingCharacters(in: .whitespacesAndNewlines)
+  }
+  
+  mutating func trim() {
+    self = self.trimmed
+  }
 }

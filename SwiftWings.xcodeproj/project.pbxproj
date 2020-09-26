@@ -66,6 +66,11 @@
 		6D3684BC23BF849900492195 /* NSObject+NameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3684BB23BF849900492195 /* NSObject+NameTests.swift */; };
 		6D42BC8B23CEF8FF00C204F9 /* String+Modify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D42BC8A23CEF8FF00C204F9 /* String+Modify.swift */; };
 		6D42BC8D23CEFD5D00C204F9 /* String+ModifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D42BC8C23CEFD5D00C204F9 /* String+ModifyTests.swift */; };
+		6D4B9C8E251DE5250021AE78 /* Double+ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4B9C8D251DE5250021AE78 /* Double+ExtensionsTests.swift */; };
+		6D4B9C95251DE6830021AE78 /* Bundle+ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4B9C94251DE6830021AE78 /* Bundle+ExtensionsTests.swift */; };
+		6D4F1E6D2514A1B20082829F /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC880B925008EBA0075F895 /* String+Extensions.swift */; };
+		6D4F1E6E2514A1B30082829F /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC880B925008EBA0075F895 /* String+Extensions.swift */; };
+		6D4F1E742514AFA50082829F /* String+ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4F1E732514AFA50082829F /* String+ExtensionsTests.swift */; };
 		6D79FFD223C3246400C163FC /* String+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D79FFD023C3218B00C163FC /* String+Validation.swift */; };
 		6D79FFD423C3247A00C163FC /* String+ValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D79FFD323C3247A00C163FC /* String+ValidationTests.swift */; };
 		6D8AF58823CC71DD00A6D6FA /* Mirror+Reflection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8AF58723CC71DD00A6D6FA /* Mirror+Reflection.swift */; };
@@ -107,6 +112,11 @@
 		6DBD6ABB2431F38600ADF258 /* Int+ChineseCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBD6AB62431DE2C00ADF258 /* Int+ChineseCurrency.swift */; };
 		6DBD6ABC2431F38900ADF258 /* Double+ChineseCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBD6AB12431C52000ADF258 /* Double+ChineseCurrency.swift */; };
 		6DBD6ABD2431F38A00ADF258 /* Double+ChineseCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBD6AB12431C52000ADF258 /* Double+ChineseCurrency.swift */; };
+		6DC880B625008E410075F895 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC880B525008E410075F895 /* Double+Extensions.swift */; };
+		6DC880B725008E440075F895 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC880B525008E410075F895 /* Double+Extensions.swift */; };
+		6DC880B825008E450075F895 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC880B525008E410075F895 /* Double+Extensions.swift */; };
+		6DC880BA25008EBA0075F895 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC880B925008EBA0075F895 /* String+Extensions.swift */; };
+		6DC880BD2500904F0075F895 /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC880BC2500904F0075F895 /* Bundle+Extensions.swift */; };
 		6DD1507523D44A6000AE8DD7 /* Array+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1507423D44A6000AE8DD7 /* Array+Subscript.swift */; };
 		6DD1507A23D44C8700AE8DD7 /* Optional+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1507923D44C8700AE8DD7 /* Optional+Transform.swift */; };
 		6DE8437E23C53C1A00CF59B9 /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE8437D23C53C1A00CF59B9 /* String+MD5.swift */; };
@@ -181,6 +191,9 @@
 		6D3684BB23BF849900492195 /* NSObject+NameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+NameTests.swift"; sourceTree = "<group>"; };
 		6D42BC8A23CEF8FF00C204F9 /* String+Modify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Modify.swift"; sourceTree = "<group>"; };
 		6D42BC8C23CEFD5D00C204F9 /* String+ModifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ModifyTests.swift"; sourceTree = "<group>"; };
+		6D4B9C8D251DE5250021AE78 /* Double+ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+ExtensionsTests.swift"; sourceTree = "<group>"; };
+		6D4B9C94251DE6830021AE78 /* Bundle+ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+ExtensionsTests.swift"; sourceTree = "<group>"; };
+		6D4F1E732514AFA50082829F /* String+ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ExtensionsTests.swift"; sourceTree = "<group>"; };
 		6D79FFD023C3218B00C163FC /* String+Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Validation.swift"; sourceTree = "<group>"; };
 		6D79FFD323C3247A00C163FC /* String+ValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ValidationTests.swift"; sourceTree = "<group>"; };
 		6D8AF58723CC71DD00A6D6FA /* Mirror+Reflection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mirror+Reflection.swift"; sourceTree = "<group>"; };
@@ -193,6 +206,9 @@
 		6DBD6AB32431C5DC00ADF258 /* Double_ChineseMoneyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double_ChineseMoneyTests.swift; sourceTree = "<group>"; };
 		6DBD6AB62431DE2C00ADF258 /* Int+ChineseCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+ChineseCurrency.swift"; sourceTree = "<group>"; };
 		6DBD6AB82431DE6100ADF258 /* Int+ChineseCurrencyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+ChineseCurrencyTests.swift"; sourceTree = "<group>"; };
+		6DC880B525008E410075F895 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
+		6DC880B925008EBA0075F895 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		6DC880BC2500904F0075F895 /* Bundle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
 		6DD1507423D44A6000AE8DD7 /* Array+Subscript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Subscript.swift"; sourceTree = "<group>"; };
 		6DD1507923D44C8700AE8DD7 /* Optional+Transform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Transform.swift"; sourceTree = "<group>"; };
 		6DE8437D23C53C1A00CF59B9 /* String+MD5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+MD5.swift"; sourceTree = "<group>"; };
@@ -286,6 +302,7 @@
 		6D34CB8823D55281005F1731 /* Double */ = {
 			isa = PBXGroup;
 			children = (
+				6DC880B525008E410075F895 /* Double+Extensions.swift */,
 				6DBD6AB12431C52000ADF258 /* Double+ChineseCurrency.swift */,
 			);
 			path = Double;
@@ -311,6 +328,7 @@
 			isa = PBXGroup;
 			children = (
 				6DBD6AB32431C5DC00ADF258 /* Double_ChineseMoneyTests.swift */,
+				6D4B9C8D251DE5250021AE78 /* Double+ExtensionsTests.swift */,
 			);
 			path = Double;
 			sourceTree = "<group>";
@@ -358,6 +376,7 @@
 		6D3684A823BF831800492195 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				6DC880BB250090430075F895 /* Bundle */,
 				6DB380A6240A106400477692 /* Range */,
 				6DB380A0240A0D9200477692 /* Sequence */,
 				6D34CB8523D5522C005F1731 /* Codable */,
@@ -388,6 +407,7 @@
 		6D3684BA23BF847D00492195 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				6D4B9C93251DE6720021AE78 /* Bundle */,
 				6DB380A3240A0E3F00477692 /* Sequence */,
 				6D34CB9523D55E3C005F1731 /* Double */,
 				6D34CB8B23D5545B005F1731 /* Codable */,
@@ -414,6 +434,7 @@
 		6D3684BE23BF8C3800492195 /* String */ = {
 			isa = PBXGroup;
 			children = (
+				6DC880B925008EBA0075F895 /* String+Extensions.swift */,
 				6D0FD5D723D696F7009BC878 /* String+Emoji.swift */,
 				6D21BE6923C57D5D00526DAF /* String+Subscript.swift */,
 				6D79FFD023C3218B00C163FC /* String+Validation.swift */,
@@ -435,6 +456,7 @@
 		6D3684C223BF8C8400492195 /* String */ = {
 			isa = PBXGroup;
 			children = (
+				6D4F1E732514AFA50082829F /* String+ExtensionsTests.swift */,
 				6D21BE6723C57D4F00526DAF /* String+SubscriptTests.swift */,
 				6D79FFD323C3247A00C163FC /* String+ValidationTests.swift */,
 				6DE8437F23C53C9B00CF59B9 /* String+MD5Tests.swift */,
@@ -442,6 +464,14 @@
 				6D11861A23E0023100726870 /* String+EmojiTests.swift */,
 			);
 			path = String;
+			sourceTree = "<group>";
+		};
+		6D4B9C93251DE6720021AE78 /* Bundle */ = {
+			isa = PBXGroup;
+			children = (
+				6D4B9C94251DE6830021AE78 /* Bundle+ExtensionsTests.swift */,
+			);
+			path = Bundle;
 			sourceTree = "<group>";
 		};
 		6D8AF58623CC71C600A6D6FA /* Mirror */ = {
@@ -482,6 +512,14 @@
 				6DB380A7240A10B000477692 /* Range+Extensions.swift */,
 			);
 			path = Range;
+			sourceTree = "<group>";
+		};
+		6DC880BB250090430075F895 /* Bundle */ = {
+			isa = PBXGroup;
+			children = (
+				6DC880BC2500904F0075F895 /* Bundle+Extensions.swift */,
+			);
+			path = Bundle;
 			sourceTree = "<group>";
 		};
 		6DD1507323D44A5200AE8DD7 /* Array */ = {
@@ -696,7 +734,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = Leacode;
 				TargetAttributes = {
 					6D36849A23BF82A600492195 = {
@@ -791,6 +829,7 @@
 				6DBD6ABA2431F38600ADF258 /* Int+ChineseCurrency.swift in Sources */,
 				6DB380B9240A10C700477692 /* Data+PrettyJSON.swift in Sources */,
 				6D21BEBA23CC3F2F00526DAF /* String+Validation.swift in Sources */,
+				6D4F1E6D2514A1B20082829F /* String+Extensions.swift in Sources */,
 				6DB380C1240A10DB00477692 /* String+Emoji.swift in Sources */,
 				6DB380B8240A10C700477692 /* MimeType.swift in Sources */,
 				6DB380BB240A10D000477692 /* Mirror+Reflection.swift in Sources */,
@@ -807,6 +846,7 @@
 				6D21BEBF23CC3F2F00526DAF /* String+Subscript.swift in Sources */,
 				6DB380B0240A10BF00477692 /* Array+Data.swift in Sources */,
 				6D21BEC023CC3F2F00526DAF /* Int+Extensions.swift in Sources */,
+				6DC880B725008E440075F895 /* Double+Extensions.swift in Sources */,
 				6DB380A9240A10B000477692 /* Range+Extensions.swift in Sources */,
 				6DBD6ABC2431F38900ADF258 /* Double+ChineseCurrency.swift in Sources */,
 			);
@@ -820,6 +860,7 @@
 				6DBD6ABB2431F38600ADF258 /* Int+ChineseCurrency.swift in Sources */,
 				6DB380B7240A10C700477692 /* Data+PrettyJSON.swift in Sources */,
 				6D21BECC23CC3F6500526DAF /* String+Validation.swift in Sources */,
+				6D4F1E6E2514A1B30082829F /* String+Extensions.swift in Sources */,
 				6DB380BF240A10DB00477692 /* String+Emoji.swift in Sources */,
 				6DB380B6240A10C700477692 /* MimeType.swift in Sources */,
 				6DB380BC240A10D100477692 /* Mirror+Reflection.swift in Sources */,
@@ -836,6 +877,7 @@
 				6D21BED123CC3F6500526DAF /* String+Subscript.swift in Sources */,
 				6DB380B2240A10BF00477692 /* Array+Data.swift in Sources */,
 				6D21BED223CC3F6500526DAF /* Int+Extensions.swift in Sources */,
+				6DC880B825008E450075F895 /* Double+Extensions.swift in Sources */,
 				6DB380AA240A10B000477692 /* Range+Extensions.swift in Sources */,
 				6DBD6ABD2431F38A00ADF258 /* Double+ChineseCurrency.swift in Sources */,
 			);
@@ -849,7 +891,9 @@
 				6DE8437E23C53C1A00CF59B9 /* String+MD5.swift in Sources */,
 				6D26182823CD57A3004BE3B8 /* Date+Extensions.swift in Sources */,
 				6D0FD5D823D696F7009BC878 /* String+Emoji.swift in Sources */,
+				6DC880BA25008EBA0075F895 /* String+Extensions.swift in Sources */,
 				6D34CB8423D551F8005F1731 /* Data+PrettyJSON.swift in Sources */,
+				6DC880BD2500904F0075F895 /* Bundle+Extensions.swift in Sources */,
 				6DE8438623C55ED100CF59B9 /* Data+Extensions.swift in Sources */,
 				6D8AF58823CC71DD00A6D6FA /* Mirror+Reflection.swift in Sources */,
 				6D34CB8723D55237005F1731 /* Codable+JSON.swift in Sources */,
@@ -865,6 +909,7 @@
 				6D34CB8223D551BE005F1731 /* Array+Data.swift in Sources */,
 				6DBD6AB72431DE2C00ADF258 /* Int+ChineseCurrency.swift in Sources */,
 				6D21BE6A23C57D5D00526DAF /* String+Subscript.swift in Sources */,
+				6DC880B625008E410075F895 /* Double+Extensions.swift in Sources */,
 				6DE8438323C55EAA00CF59B9 /* Int+Extensions.swift in Sources */,
 				6DB380A8240A10B000477692 /* Range+Extensions.swift in Sources */,
 			);
@@ -874,6 +919,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D4B9C95251DE6830021AE78 /* Bundle+ExtensionsTests.swift in Sources */,
 				6D34CB7D23D5341A005F1731 /* Array+SubscriptTests.swift in Sources */,
 				6D42BC8D23CEFD5D00C204F9 /* String+ModifyTests.swift in Sources */,
 				6D34CB9223D55503005F1731 /* CodableModel.swift in Sources */,
@@ -888,7 +934,9 @@
 				6D79FFD423C3247A00C163FC /* String+ValidationTests.swift in Sources */,
 				6D34CB9423D55E26005F1731 /* Data+PrettyJSONTests.swift in Sources */,
 				6D3684BC23BF849900492195 /* NSObject+NameTests.swift in Sources */,
+				6D4F1E742514AFA50082829F /* String+ExtensionsTests.swift in Sources */,
 				6DE8438023C53C9B00CF59B9 /* String+MD5Tests.swift in Sources */,
+				6D4B9C8E251DE5250021AE78 /* Double+ExtensionsTests.swift in Sources */,
 				6DE8439B23C56ED200CF59B9 /* MimeTypeTests.swift in Sources */,
 				6DBD6AB52431C61B00ADF258 /* Double_ChineseMoneyTests.swift in Sources */,
 				6DE8439423C56A7700CF59B9 /* Data+File.swift in Sources */,
@@ -929,7 +977,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.leacode.SwiftWings;
 				PRODUCT_NAME = SwiftWings;
 				SDKROOT = watchos;
@@ -959,7 +1007,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.leacode.SwiftWings;
 				PRODUCT_NAME = SwiftWings;
 				SDKROOT = watchos;
@@ -988,7 +1036,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.leacode.SwiftWings;
 				PRODUCT_NAME = SwiftWings;
 				SDKROOT = appletvos;
@@ -1019,7 +1067,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.leacode.SwiftWings;
 				PRODUCT_NAME = SwiftWings;
 				SDKROOT = appletvos;
@@ -1056,6 +1104,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1081,7 +1130,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1119,6 +1168,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1138,7 +1188,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1163,13 +1213,13 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.leacode.SwiftWings;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -1193,13 +1243,13 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.leacode.SwiftWings;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

@@ -11,7 +11,7 @@
 
 ## Requirements
 
-- iOS 8.0+ / macOS 10.10+ 
+- iOS 9.0+ / macOS 10.10+ 
 - Swift 5.0+
 - Watch OS 2.0+
 - TV OS 9.0+
