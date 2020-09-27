@@ -22,9 +22,9 @@ class Int_ExtensionsTests: XCTestCase {
     XCTAssertEqual(12345678.simplifiedChinese, "一千二百三十四万五千六百七十八")
     XCTAssertEqual(123456789.simplifiedChinese, "一亿二千三百四十五万六千七百八十九")
     XCTAssertEqual(1234567890.simplifiedChinese, "十二亿三千四百五十六万七千八百九十")
-    XCTAssertEqual(12345678900.simplifiedChinese, "一百二十三亿四千五百六十七万八千九百")
-    XCTAssertEqual(123456789000.simplifiedChinese, "一千二百三十四亿五千六百七十八万九千")
-    XCTAssertEqual(1234567890000.simplifiedChinese, "一兆二千三百四十五亿六千七百八十九万")
+    XCTAssertEqual(Int64(12345678900).simplifiedChinese, "一百二十三亿四千五百六十七万八千九百")
+    XCTAssertEqual(Int64(123456789000).simplifiedChinese, "一千二百三十四亿五千六百七十八万九千")
+    XCTAssertEqual(Int64(1234567890000).simplifiedChinese, "一兆二千三百四十五亿六千七百八十九万")
     
   }
   func test_traditionalChinese_rerurnsExpected() {
@@ -38,9 +38,9 @@ class Int_ExtensionsTests: XCTestCase {
     XCTAssertEqual(12345678.traditionalChinese, "一千二百三十四萬五千六百七十八")
     XCTAssertEqual(123456789.traditionalChinese, "一億二千三百四十五萬六千七百八十九")
     XCTAssertEqual(1234567890.traditionalChinese, "十二億三千四百五十六萬七千八百九十")
-    XCTAssertEqual(12345678900.traditionalChinese, "一百二十三億四千五百六十七萬八千九百")
-    XCTAssertEqual(123456789000.traditionalChinese, "一千二百三十四億五千六百七十八萬九千")
-    XCTAssertEqual(1234567890000.traditionalChinese, "一兆二千三百四十五億六千七百八十九萬")
+    XCTAssertEqual(Int64(12345678900).traditionalChinese, "一百二十三億四千五百六十七萬八千九百")
+    XCTAssertEqual(Int64(123456789000).traditionalChinese, "一千二百三十四億五千六百七十八萬九千")
+    XCTAssertEqual(Int64(1234567890000).traditionalChinese, "一兆二千三百四十五億六千七百八十九萬")
     
   }
   
