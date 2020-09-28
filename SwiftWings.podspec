@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'SwiftWings'
-  s.version          = '1.2.0'
+  s.version          = '1.4.0'
   s.summary          = 'A collection of Swift extensions for all platforms'
   s.homepage         = 'https://github.com/leacode/SwiftWings'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = '9.0'
   s.watchos.deployment_target = '2.0'
   
-  s.swift_versions = ['5.0', '5.1', 5.2]
+  s.swift_versions = ['5.0', '5.1', '5.2', '5.3']
   
   s.source_files   = 'Sources/**/*.swift'
   
