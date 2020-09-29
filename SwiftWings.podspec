@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.summary          = 'A collection of Swift extensions for all platforms'
   s.homepage         = 'https://github.com/leacode/SwiftWings'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'leacode' => 'contact@leacode.dev' }
+  s.author           = { 'leacode' => 'lichunyu@vip.qq.com' }
   s.source           = { :git => 'https://github.com/leacode/SwiftWings.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '9.0'
