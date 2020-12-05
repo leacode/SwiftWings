@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6D21BEB623CC3F2F00526DAF"
-               BuildableName = "SwiftWings.framework"
-               BlueprintName = "SwiftWings watchOS"
+               BlueprintIdentifier = "1FAA86CF257C450200931FB9"
+               BuildableName = "SwiftWings macOS.framework"
+               BlueprintName = "SwiftWings macOS"
                ReferencedContainer = "container:SwiftWings.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -50,9 +50,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6D21BEB623CC3F2F00526DAF"
-            BuildableName = "SwiftWings.framework"
-            BlueprintName = "SwiftWings watchOS"
+            BlueprintIdentifier = "1FAA86CF257C450200931FB9"
+            BuildableName = "SwiftWings macOS.framework"
+            BlueprintName = "SwiftWings macOS"
             ReferencedContainer = "container:SwiftWings.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

@@ -7,6 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FAA86D1257C450200931FB9 /* SwiftWings.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D36849E23BF82A600492195 /* SwiftWings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1FAA86D3257C450200931FB9 /* String+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D79FFD023C3218B00C163FC /* String+Validation.swift */; };
+		1FAA86D4257C450200931FB9 /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE8437D23C53C1A00CF59B9 /* String+MD5.swift */; };
+		1FAA86D5257C450200931FB9 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D26182723CD57A3004BE3B8 /* Date+Extensions.swift */; };
+		1FAA86D6257C450200931FB9 /* String+Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0FD5D723D696F7009BC878 /* String+Emoji.swift */; };
+		1FAA86D7257C450200931FB9 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC880B925008EBA0075F895 /* String+Extensions.swift */; };
+		1FAA86D8257C450200931FB9 /* Data+PrettyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D34CB8323D551F8005F1731 /* Data+PrettyJSON.swift */; };
+		1FAA86D9257C450200931FB9 /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC880BC2500904F0075F895 /* Bundle+Extensions.swift */; };
+		1FAA86DA257C450200931FB9 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE8438523C55ED100CF59B9 /* Data+Extensions.swift */; };
+		1FAA86DB257C450200931FB9 /* Mirror+Reflection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8AF58723CC71DD00A6D6FA /* Mirror+Reflection.swift */; };
+		1FAA86DC257C450200931FB9 /* Codable+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D34CB8623D55237005F1731 /* Codable+JSON.swift */; };
+		1FAA86DD257C450200931FB9 /* Sequence+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB380A1240A0DA800477692 /* Sequence+Extensions.swift */; };
+		1FAA86DE257C450200931FB9 /* Double+ChineseCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBD6AB12431C52000ADF258 /* Double+ChineseCurrency.swift */; };
+		1FAA86DF257C450200931FB9 /* Array+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1507423D44A6000AE8DD7 /* Array+Subscript.swift */; };
+		1FAA86E0257C450200931FB9 /* NSObject+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3684A923BF834B00492195 /* NSObject+Name.swift */; };
+		1FAA86E1257C450200931FB9 /* MimeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D21BEA123C84A9600526DAF /* MimeType.swift */; };
+		1FAA86E2257C450200931FB9 /* Optional+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1507923D44C8700AE8DD7 /* Optional+Transform.swift */; };
+		1FAA86E3257C450200931FB9 /* String+Modify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D42BC8A23CEF8FF00C204F9 /* String+Modify.swift */; };
+		1FAA86E4257C450200931FB9 /* String+File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB380C3240A175A00477692 /* String+File.swift */; };
+		1FAA86E5257C450200931FB9 /* Data+MimeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE8438723C5603200CF59B9 /* Data+MimeType.swift */; };
+		1FAA86E6257C450200931FB9 /* Array+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D34CB8123D551BE005F1731 /* Array+Data.swift */; };
+		1FAA86E7257C450200931FB9 /* Int+ChineseCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBD6AB62431DE2C00ADF258 /* Int+ChineseCurrency.swift */; };
+		1FAA86E8257C450200931FB9 /* String+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D21BE6923C57D5D00526DAF /* String+Subscript.swift */; };
+		1FAA86E9257C450200931FB9 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC880B525008E410075F895 /* Double+Extensions.swift */; };
+		1FAA86EA257C450200931FB9 /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE8438223C55EAA00CF59B9 /* Int+Extensions.swift */; };
+		1FAA86EB257C450200931FB9 /* Range+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB380A7240A10B000477692 /* Range+Extensions.swift */; };
 		6D0FD5D823D696F7009BC878 /* String+Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0FD5D723D696F7009BC878 /* String+Emoji.swift */; };
 		6D11861B23E0023100726870 /* String+EmojiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D11861A23E0023100726870 /* String+EmojiTests.swift */; };
 		6D21BE6823C57D4F00526DAF /* String+SubscriptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D21BE6723C57D4F00526DAF /* String+SubscriptTests.swift */; };
@@ -144,6 +170,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1FAA86F1257C450200931FB9 /* SwiftWings macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "SwiftWings macOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D0FD5D723D696F7009BC878 /* String+Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Emoji.swift"; sourceTree = "<group>"; };
 		6D11861A23E0023100726870 /* String+EmojiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+EmojiTests.swift"; sourceTree = "<group>"; };
 		6D21BE6723C57D4F00526DAF /* String+SubscriptTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+SubscriptTests.swift"; sourceTree = "<group>"; };
@@ -226,6 +253,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1FAA86EC257C450200931FB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6D21BEC123CC3F2F00526DAF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -351,6 +385,7 @@
 				6D3684AF23BF844000492195 /* SwiftWingsTests.xctest */,
 				6D21BEC623CC3F2F00526DAF /* SwiftWings.framework */,
 				6D21BED823CC3F6500526DAF /* SwiftWings.framework */,
+				1FAA86F1257C450200931FB9 /* SwiftWings macOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -628,6 +663,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		1FAA86D0257C450200931FB9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FAA86D1257C450200931FB9 /* SwiftWings.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6D21BEB723CC3F2F00526DAF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -655,6 +698,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		1FAA86CF257C450200931FB9 /* SwiftWings macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FAA86EE257C450200931FB9 /* Build configuration list for PBXNativeTarget "SwiftWings macOS" */;
+			buildPhases = (
+				1FAA86D0257C450200931FB9 /* Headers */,
+				1FAA86D2257C450200931FB9 /* Sources */,
+				1FAA86EC257C450200931FB9 /* Frameworks */,
+				1FAA86ED257C450200931FB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftWings macOS";
+			productName = SwiftWings;
+			productReference = 1FAA86F1257C450200931FB9 /* SwiftWings macOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		6D21BEB623CC3F2F00526DAF /* SwiftWings watchOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D21BEC323CC3F2F00526DAF /* Build configuration list for PBXNativeTarget "SwiftWings watchOS" */;
@@ -734,7 +795,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1200;
+				LastUpgradeCheck = 1220;
 				ORGANIZATIONNAME = Leacode;
 				TargetAttributes = {
 					6D36849A23BF82A600492195 = {
@@ -762,12 +823,20 @@
 				6D36849A23BF82A600492195 /* SwiftWings */,
 				6D21BEB623CC3F2F00526DAF /* SwiftWings watchOS */,
 				6D21BEC823CC3F6500526DAF /* SwiftWings tvOS */,
+				1FAA86CF257C450200931FB9 /* SwiftWings macOS */,
 				6D3684AE23BF844000492195 /* SwiftWingsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1FAA86ED257C450200931FB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6D21BEC223CC3F2F00526DAF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -821,6 +890,38 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1FAA86D2257C450200931FB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FAA86D3257C450200931FB9 /* String+Validation.swift in Sources */,
+				1FAA86D4257C450200931FB9 /* String+MD5.swift in Sources */,
+				1FAA86D5257C450200931FB9 /* Date+Extensions.swift in Sources */,
+				1FAA86D6257C450200931FB9 /* String+Emoji.swift in Sources */,
+				1FAA86D7257C450200931FB9 /* String+Extensions.swift in Sources */,
+				1FAA86D8257C450200931FB9 /* Data+PrettyJSON.swift in Sources */,
+				1FAA86D9257C450200931FB9 /* Bundle+Extensions.swift in Sources */,
+				1FAA86DA257C450200931FB9 /* Data+Extensions.swift in Sources */,
+				1FAA86DB257C450200931FB9 /* Mirror+Reflection.swift in Sources */,
+				1FAA86DC257C450200931FB9 /* Codable+JSON.swift in Sources */,
+				1FAA86DD257C450200931FB9 /* Sequence+Extensions.swift in Sources */,
+				1FAA86DE257C450200931FB9 /* Double+ChineseCurrency.swift in Sources */,
+				1FAA86DF257C450200931FB9 /* Array+Subscript.swift in Sources */,
+				1FAA86E0257C450200931FB9 /* NSObject+Name.swift in Sources */,
+				1FAA86E1257C450200931FB9 /* MimeType.swift in Sources */,
+				1FAA86E2257C450200931FB9 /* Optional+Transform.swift in Sources */,
+				1FAA86E3257C450200931FB9 /* String+Modify.swift in Sources */,
+				1FAA86E4257C450200931FB9 /* String+File.swift in Sources */,
+				1FAA86E5257C450200931FB9 /* Data+MimeType.swift in Sources */,
+				1FAA86E6257C450200931FB9 /* Array+Data.swift in Sources */,
+				1FAA86E7257C450200931FB9 /* Int+ChineseCurrency.swift in Sources */,
+				1FAA86E8257C450200931FB9 /* String+Subscript.swift in Sources */,
+				1FAA86E9257C450200931FB9 /* Double+Extensions.swift in Sources */,
+				1FAA86EA257C450200931FB9 /* Int+Extensions.swift in Sources */,
+				1FAA86EB257C450200931FB9 /* Range+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6D21BEB923CC3F2F00526DAF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -958,6 +1059,71 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		1FAA86EF257C450200931FB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.7;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.leacode.SwiftWings;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
+			};
+			name = Debug;
+		};
+		1FAA86F0257C450200931FB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.7;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.leacode.SwiftWings;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
+			};
+			name = Release;
+		};
 		6D21BEC423CC3F2F00526DAF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -971,13 +1137,13 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.7;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.leacode.SwiftWings;
 				PRODUCT_NAME = SwiftWings;
 				SDKROOT = watchos;
@@ -1001,13 +1167,13 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.7;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.leacode.SwiftWings;
 				PRODUCT_NAME = SwiftWings;
 				SDKROOT = watchos;
@@ -1030,20 +1196,20 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.7;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.leacode.SwiftWings;
 				PRODUCT_NAME = SwiftWings;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
 				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Debug;
@@ -1061,19 +1227,19 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.7;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.leacode.SwiftWings;
 				PRODUCT_NAME = SwiftWings;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
 				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Release;
@@ -1130,7 +1296,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1188,7 +1354,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1213,18 +1379,19 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.7;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.leacode.SwiftWings;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,6";
@@ -1244,18 +1411,19 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.7;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.leacode.SwiftWings;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
@@ -1264,7 +1432,9 @@
 		6D3684B823BF844000492195 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y85J467HQH;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1273,15 +1443,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = dev.leacode.SwiftWingsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		6D3684B923BF844000492195 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y85J467HQH;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1290,14 +1462,23 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = dev.leacode.SwiftWingsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1FAA86EE257C450200931FB9 /* Build configuration list for PBXNativeTarget "SwiftWings macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FAA86EF257C450200931FB9 /* Debug */,
+				1FAA86F0257C450200931FB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6D21BEC323CC3F2F00526DAF /* Build configuration list for PBXNativeTarget "SwiftWings watchOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
