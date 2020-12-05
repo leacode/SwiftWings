@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
   s.name             = 'SwiftWings'
-  s.version          = '1.7.0'
+  s.version          = '1.9.0'
   s.summary          = 'A collection of Swift extensions for all platforms'
   s.homepage         = 'https://github.com/leacode/SwiftWings'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'leacode' => 'lichunyu@vip.qq.com' }
   s.source           = { :git => 'https://github.com/leacode/SwiftWings.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '12.0'
   s.osx.deployment_target  = '10.11'
   s.tvos.deployment_target = '9.0'
   s.watchos.deployment_target = '2.0'

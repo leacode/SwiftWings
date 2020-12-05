@@ -11,11 +11,13 @@
 
 ## Requirements
 
-- iOS 9.0+ / macOS 10.10+ 
+- iOS 12.0+ / macOS 10.11+ 
 - Swift 5.0+
 - Watch OS 2.0+
 - TV OS 9.0+
 - Linux can run Swift
+
+If you're supporting iOS 8+ and macOS 10.xx, you can specify version of v1.5 
 
 ## Installation
 
@@ -84,7 +86,7 @@ Add dependency in Package.swift:
 
 ```
 dependencies: [
-    .package(url: "https://github.com/leacode/SwiftWings.git", from: "1.0.0"),
+    .package(url: "https://github.com/leacode/SwiftWings.git", from: "1.9.0"),
 ]
 
 ...
