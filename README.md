@@ -69,11 +69,13 @@ The [Swift Package Manager](https://swift.org/package-manager/) is a tool for ma
 
 #### iOS/ MacOS:
 
-To integrate `SwiftWings` into your Xcode project using Xcode 11, specify it in `File > Swift Packages > Add`:
+To integrate `SwiftWings` into your project , specify it in `File > Swift Packages > Add`:
 
 ```
 https://github.com/leacode/SwiftWings
 ```
+
+From 1.6.0 the framework support Mac os  >= 11.0.
 
 
 #### Server Side:
