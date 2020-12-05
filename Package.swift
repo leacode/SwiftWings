@@ -10,5 +10,6 @@ let package = Package(name: "SwiftWings",
                                   .watchOS(.v2)],
                       products: [.library(name: "SwiftWings",
                                           targets: ["SwiftWings"])],
-                      targets: [.target(name: "SwiftWings")],
+                      targets: [.target(name: "SwiftWings",
+                                        path: "Sources")],
                       swiftLanguageVersions: [.v5])
