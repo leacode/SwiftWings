@@ -86,7 +86,7 @@ public extension Date {
     return today == day
   }
   
-  // MARK: -  Date before
+  // MARK: -  Date before & Date after
   
   var lastMonday: Date {
     let dayOfWeek = Calendar.current.component(.weekday, from: self)
@@ -159,5 +159,20 @@ public extension Date {
     return Calendar.current.date(byAdding: .day, value: 1, to: self)
   }
   
+  var lastMonth: Date? {
+    return Calendar.current.date(byAdding: .month, value: -1, to: self)
+  }
+  
+  var nextMonth: Date? {
+    return Calendar.current.date(byAdding: .month, value: 1, to: self)
+  }
+  
+  var lastYear: Date? {
+    return Calendar.current.date(byAdding: .year, value: -1, to: self)
+  }
+  
+  var nextYear: Date? {
+    return Calendar.current.date(byAdding: .year, value: 1, to: self)
+  }
   
 }
