@@ -35,6 +35,11 @@
 		1FAA86EA257C450200931FB9 /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE8438223C55EAA00CF59B9 /* Int+Extensions.swift */; };
 		1FAA86EB257C450200931FB9 /* Range+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB380A7240A10B000477692 /* Range+Extensions.swift */; };
 		1FC11D7B267C4C54001D0AE4 /* Date+ComponentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC11D7A267C4C54001D0AE4 /* Date+ComponentsTests.swift */; };
+		1FC11D7C267C70FD001D0AE4 /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC880BC2500904F0075F895 /* Bundle+Extensions.swift */; };
+		1FC11D7D267C70FE001D0AE4 /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC880BC2500904F0075F895 /* Bundle+Extensions.swift */; };
+		1FC11D7E267C7100001D0AE4 /* NSNumber+Display.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F35B19625A5583E0080C880 /* NSNumber+Display.swift */; };
+		1FC11D7F267C7101001D0AE4 /* NSNumber+Display.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F35B19625A5583E0080C880 /* NSNumber+Display.swift */; };
+		1FC11D80267C7101001D0AE4 /* NSNumber+Display.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F35B19625A5583E0080C880 /* NSNumber+Display.swift */; };
 		1FFC8D4D2608F50C00F78E19 /* Date+Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFC8D4C2608F50C00F78E19 /* Date+Components.swift */; };
 		1FFC8D4E2608F50C00F78E19 /* Date+Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFC8D4C2608F50C00F78E19 /* Date+Components.swift */; };
 		1FFC8D4F2608F50C00F78E19 /* Date+Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFC8D4C2608F50C00F78E19 /* Date+Components.swift */; };
@@ -940,6 +945,7 @@
 				1FAA86E9257C450200931FB9 /* Double+Extensions.swift in Sources */,
 				1FAA86EA257C450200931FB9 /* Int+Extensions.swift in Sources */,
 				1FAA86EB257C450200931FB9 /* Range+Extensions.swift in Sources */,
+				1FC11D80267C7101001D0AE4 /* NSNumber+Display.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -950,6 +956,7 @@
 				6DB380BD240A10D600477692 /* Optional+Transform.swift in Sources */,
 				6DBD6ABA2431F38600ADF258 /* Int+ChineseCurrency.swift in Sources */,
 				6DB380B9240A10C700477692 /* Data+PrettyJSON.swift in Sources */,
+				1FC11D7C267C70FD001D0AE4 /* Bundle+Extensions.swift in Sources */,
 				6D21BEBA23CC3F2F00526DAF /* String+Validation.swift in Sources */,
 				6D4F1E6D2514A1B20082829F /* String+Extensions.swift in Sources */,
 				6DB380C1240A10DB00477692 /* String+Emoji.swift in Sources */,
@@ -972,6 +979,7 @@
 				6DC880B725008E440075F895 /* Double+Extensions.swift in Sources */,
 				6DB380A9240A10B000477692 /* Range+Extensions.swift in Sources */,
 				6DBD6ABC2431F38900ADF258 /* Double+ChineseCurrency.swift in Sources */,
+				1FC11D7E267C7100001D0AE4 /* NSNumber+Display.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -982,6 +990,7 @@
 				6DB380BE240A10D600477692 /* Optional+Transform.swift in Sources */,
 				6DBD6ABB2431F38600ADF258 /* Int+ChineseCurrency.swift in Sources */,
 				6DB380B7240A10C700477692 /* Data+PrettyJSON.swift in Sources */,
+				1FC11D7D267C70FE001D0AE4 /* Bundle+Extensions.swift in Sources */,
 				6D21BECC23CC3F6500526DAF /* String+Validation.swift in Sources */,
 				6D4F1E6E2514A1B30082829F /* String+Extensions.swift in Sources */,
 				6DB380BF240A10DB00477692 /* String+Emoji.swift in Sources */,
@@ -1004,6 +1013,7 @@
 				6DC880B825008E450075F895 /* Double+Extensions.swift in Sources */,
 				6DB380AA240A10B000477692 /* Range+Extensions.swift in Sources */,
 				6DBD6ABD2431F38A00ADF258 /* Double+ChineseCurrency.swift in Sources */,
+				1FC11D7F267C7101001D0AE4 /* NSNumber+Display.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1105,6 +1115,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MARKETING_VERSION = 1.7;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.leacode.SwiftWings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1138,6 +1149,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MARKETING_VERSION = 1.7;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.leacode.SwiftWings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1235,7 +1247,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TVOS_DEPLOYMENT_TARGET = 12.0;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Debug;
@@ -1265,7 +1277,7 @@
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
-				TVOS_DEPLOYMENT_TARGET = 12.0;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Release;
