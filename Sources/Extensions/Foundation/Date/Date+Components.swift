@@ -28,8 +28,6 @@ extension Date {
 
   var weekdayOrdinal: Int { Calendar.current.component(.weekdayOrdinal, from: self) }
 
-  var quarter: Int { Calendar.current.component(.quarter, from: self) }
-
   var weekOfMonth: Int { Calendar.current.component(.weekOfMonth, from: self) }
 
   var weekOfYear: Int { Calendar.current.component(.weekOfYear, from: self) }

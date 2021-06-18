@@ -152,27 +152,27 @@ public extension Date {
   }
   
   var lastDay: Date? {
-    return Calendar.current.date(byAdding: .day, value: -1, to: self)
+    Calendar.current.date(byAdding: .day, value: -1, to: self)
   }
   
   var nextDay: Date? {
-    return Calendar.current.date(byAdding: .day, value: 1, to: self)
+    Calendar.current.date(byAdding: .day, value: 1, to: self)
   }
   
   var lastMonth: Date? {
-    return Calendar.current.date(byAdding: .month, value: -1, to: self)
+    Calendar.current.date(byAdding: .month, value: -1, to: self)
   }
   
   var nextMonth: Date? {
-    return Calendar.current.date(byAdding: .month, value: 1, to: self)
+    Calendar.current.date(byAdding: .month, value: 1, to: self)
   }
   
   var lastYear: Date? {
-    return Calendar.current.date(byAdding: .year, value: -1, to: self)
+    Calendar.current.date(byAdding: .year, value: -1, to: self)
   }
   
   var nextYear: Date? {
-    return Calendar.current.date(byAdding: .year, value: 1, to: self)
+    Calendar.current.date(byAdding: .year, value: 1, to: self)
   }
   
 }

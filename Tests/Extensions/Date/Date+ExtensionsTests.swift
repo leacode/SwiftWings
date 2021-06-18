@@ -139,5 +139,33 @@ class Date_ExtensionsTests: XCTestCase {
     guard let expectedDate = dayFormatter.date(from: "2020-01-14") else { return }
     XCTAssertEqual(aMonday.nextDay!, expectedDate)
   }
+  
+  func test_Date_lastMonth_returnsExpected() {
+    let date = dayFormatter.date(from: "2020-5-31")!
+    guard let expectedDate = dayFormatter.date(from: "2020-04-30") else { return }
+    XCTAssertEqual(date.lastMonth!, expectedDate)
+  }
+  
+  func test_Date_nextMonth_returnsExpected() {
+    let date = dayFormatter.date(from: "2020-5-31")!
+    guard let expectedDate = dayFormatter.date(from: "2020-06-30") else { return }
+    XCTAssertEqual(date.nextMonth!, expectedDate)
+  }
+  
+  func test_Date_lastYear_returnsExpected() {
+    let date = dayFormatter.date(from: "2020-5-31")!
+    guard let expectedDate = dayFormatter.date(from: "2019-065-31") else { return }
+    let lastYear = date.lastYear!
+    
+    XCTAssertEqual(lastYear, expectedDate)
+  }
+  
+  func test_Date_nextYear_returnsExpected() {
+    let date = dayFormatter.date(from: "2020-5-31")!
+    guard let expectedDate = dayFormatter.date(from: "2021-065-31") else { return }
+    let nextYear = date.nextYear!
+    
+    XCTAssertEqual(nextYear, expectedDate)
+  }
 
 }
