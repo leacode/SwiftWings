@@ -11,11 +11,11 @@ import Foundation
 public extension Date {
   
   static var currentTimeMillis: Int64 {
-    return Date().timeMillis
+    Date().timeMillis
   }
   
   var timeMillis: Int64 {
-    return Int64(self.timeIntervalSince1970 * 1000)
+    Int64(self.timeIntervalSince1970 * 1000)
   }
   
   var isToday: Bool {

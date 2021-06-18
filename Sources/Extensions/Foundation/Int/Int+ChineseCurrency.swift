@@ -10,6 +10,6 @@ import Foundation
 
 public extension Int {
   var chineseMoneySpell: String? {
-    return Double(self).chineseMoneySpell
+    Double(self).chineseMoneySpell
   }
 }

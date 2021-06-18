@@ -12,9 +12,9 @@ public extension Int {
   
   /// Array of bytes with optional padding (little-endian)
   func bytes(_ totalBytes: Int = MemoryLayout<Int>.size) -> [UInt8] {
-    return withUnsafeBytes(of: self.bigEndian) { Array($0) }
+    withUnsafeBytes(of: self.bigEndian) { Array($0) }
   }
-    
+  
   var half: Int? {
     guard self < -1 || self > 1 else { return nil}
     return self / 2
@@ -45,7 +45,7 @@ public extension BinaryInteger {
   }
   
   var isEven: Bool {
-    return self%2 == 0
+    self%2 == 0
   }
   
   func toDouble() -> Double {

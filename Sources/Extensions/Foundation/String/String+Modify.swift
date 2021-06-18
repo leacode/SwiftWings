@@ -12,12 +12,12 @@ public extension String {
   
   /// characteristics of vowels
   static var vowels: [String] {
-    return ["a", "e", "i", "o", "u"]
+    ["a", "e", "i", "o", "u"]
   }
   
   /// characteristics of consonants
   static var consonants: [String] {
-    return ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x", "z"]
+    ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x", "z"]
   }
   
   /// exceptions plural format
@@ -115,7 +115,7 @@ public extension String {
   
   /// plural of the string
   var plural: String {
-    return pluralize(2)
+    pluralize(2)
   }
   
   ///
@@ -130,7 +130,7 @@ public extension String {
   /// str.replacingCharacters(in: dict)  // 一2三4五
   ///
   func replacingCharacters(in dictionary: [String: String]) -> String {
-    return map { (character: Character) -> String in
+    map { (character: Character) -> String in
       dictionary[String(character)] ?? String(character)
     }.joined()
   }
@@ -147,7 +147,7 @@ public extension String {
 
 public extension String {
   func capitalizingFirstLetter() -> String {
-    return prefix(1).uppercased() + dropFirst()
+    prefix(1).uppercased() + dropFirst()
   }
   
   mutating func capitalizeFirstLetter() {

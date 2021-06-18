@@ -234,9 +234,9 @@ public enum FileType: String {
   
   public init(pathOrFileName: String) {
     if let fileExtension = pathOrFileName.fileExtension,
-      let fileMimeType = mimeTypes[fileExtension] {
-        self = FileType(stringLiteral: fileMimeType.name)
-        return
+       let fileMimeType = mimeTypes[fileExtension] {
+      self = FileType(stringLiteral: fileMimeType.name)
+      return
     } else {
       self = .unknown
     }

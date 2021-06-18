@@ -11,17 +11,17 @@ import Foundation
 public extension String {
   /// A Boolean value indicating whether a string contains phone number.
   var containsPhoneNumber: Bool {
-    return contains(types: .phoneNumber)
+    contains(types: .phoneNumber)
   }
   
   /// A Boolean value indicating whether a string contains link.
   var containsLink: Bool {
-    return contains(types: .link)
+    contains(types: .link)
   }
   
   /// A Boolean value indicating whether a string contains Address.
   var containsAddress: Bool {
-    return contains(types: .address)
+    contains(types: .address)
   }
   
   /// check if string contains certain Checking Type
@@ -67,22 +67,22 @@ public extension String {
   
   /// A Boolean value indicating whether a string is a UUID String.
   var isUUID: Bool {
-    return UUID(uuidString: self) != nil
+    UUID(uuidString: self) != nil
   }
   
   /// A Boolean value indicating whether a string is a Int String.
   var isInt: Bool {
-    return Int(self) != nil
+    Int(self) != nil
   }
   
   /// A Boolean value indicating whether a string is a Double String.
   var isDouble: Bool {
-    return Double(self) != nil
+    Double(self) != nil
   }
   
   /// A Boolean value indicating whether a string is a Float String.
   var isFloat: Bool {
-    return Float(self) != nil
+    Float(self) != nil
   }
   
   /// A Boolean value indicating whether a string is valid Chinese ID card number String.
@@ -130,7 +130,7 @@ public extension String {
   
   /// A Boolean value indicating whether a string is valid Bank Card Number String.
   var isValidBankCardNumber: Bool {
-    return self.luhnCheck()
+    self.luhnCheck()
   }
   
   /// Luhn Algorithm in Swift.

@@ -11,11 +11,11 @@ import Foundation
 public extension NSObject {
   /// Name of class
   class var className: String {
-    return String(describing: self)
+    String(describing: self)
   }
   
   /// Name of self's class
   var className: String {
-    return String(describing: Self.self)
+    String(describing: Self.self)
   }
 }
