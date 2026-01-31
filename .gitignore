@@ -90,3 +90,6 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+
+# GitHub wiki mirror (created by Scripts/mirror_docs_to_wiki.sh)
+.wiki/

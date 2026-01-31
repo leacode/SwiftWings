@@ -30,7 +30,11 @@ class NSObject_NameTests: XCTestCase {
     let expected = "NSObjectClass"
     
     // when
+    #if os(macOS)
+    let className = NSObjectClass.className()
+    #else
     let className = NSObjectClass.className
+    #endif
     
     // then
     XCTAssertEqual(className, expected)
