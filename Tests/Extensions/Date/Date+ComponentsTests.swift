@@ -125,14 +125,14 @@ class Date_ComponentsTests: XCTestCase {
   
   func test_Data_calender_returnsExpected() {
     let date = givenADate()
-    let expectedResult = 9223372036854775807
+    let expectedResult = Calendar.current.component(.calendar, from: date)
 
     XCTAssertEqual(date.calendar, expectedResult)
   }
   
   func test_Data_timeZone_returnsExpected() {
     let date = givenADate()
-    let expectedResult = 9223372036854775807
+    let expectedResult = Calendar.current.component(.timeZone, from: date)
 
     XCTAssertEqual(date.timeZone, expectedResult)
   }

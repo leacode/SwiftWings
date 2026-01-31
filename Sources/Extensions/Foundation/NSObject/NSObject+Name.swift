@@ -8,6 +8,8 @@
 
 import Foundation
 
+#if !os(macOS)
+// On macOS Foundation already exposes `className`, so keep this shim for the other platforms only.
 public extension NSObject {
   /// Name of class
   class var className: String {
@@ -19,3 +21,4 @@ public extension NSObject {
     String(describing: Self.self)
   }
 }
+#endif
